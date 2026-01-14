@@ -13,15 +13,14 @@ import schedule
 def scrape_info():
     url = "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0"
     options = webdriver.ChromeOptions()
-    options.binary_location = r"C:\Users\bachoo\Desktop\Programming\Python\scraper\chrome-bin\chrome.exe"
     options.add_argument('--headless')
     options.add_argument('--disable-web-security')
     options.add_argument('--allow-running-insecure-content')
-    options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
+    options.add_argument('--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
 
-    driver = webdriver.Chrome(service=Service(r"C:\Users\bachoo\Desktop\Programming\Python\scraper\chromedriver\chromedriver.exe"), options=options)
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     driver.get(url)
     print("Waiting 10 seconds for JS to load")
     time.sleep(10)  # Allow JS to load
