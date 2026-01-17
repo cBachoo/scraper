@@ -22,12 +22,6 @@ def scrape_info():
     )
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--no-first-run")
-    options.add_argument("--disable-extensions")
-    options.add_argument("--disable-background-timer-throttling")
-    options.add_argument("--disable-backgrounding-occluded-windows")
-    options.add_argument("--disable-renderer-backgrounding")
 
     driver = webdriver.Chrome(
         service=Service(ChromeDriverManager().install()), options=options
@@ -74,7 +68,7 @@ def scrape_info():
                         a = li.find_element(By.TAG_NAME, "a")
                         a.click()
                         print(f"Clicked, URL: {driver.current_url}")
-                        time.sleep(10)
+                        time.sleep(5)
                         body_text = driver.find_element(By.TAG_NAME, "body").text
                         print("Page text after click:")
                         print(body_text)
@@ -126,7 +120,7 @@ def scrape_info():
                         a = li.find_element(By.TAG_NAME, "a")
                         a.click()
                         print(f"Clicked, URL: {driver.current_url}")
-                        time.sleep(10)
+                        time.sleep(5)
                         body_text = driver.find_element(By.TAG_NAME, "body").text
                         print("Page text after click:")
                         print(body_text)
