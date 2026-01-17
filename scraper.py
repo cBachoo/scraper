@@ -27,8 +27,8 @@ def scrape_info():
         service=Service(ChromeDriverManager().install()), options=options
     )
     driver.get(url)
-    print("Waiting 10 seconds for JS to load")
-    time.sleep(10)  # Allow JS to load
+    print("Waiting 15 seconds for JS to load")
+    time.sleep(15)  # Allow JS to load
     print(f"Page title: {driver.title}")
 
     # Initial check for sufficient elements
