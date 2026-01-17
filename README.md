@@ -1,10 +1,18 @@
 # Uma Musume Scout Scraper
 
+<<<<<<< HEAD
 A Python web scraper that extracts scout event information from the Uma Musume game website.
 
 ## Description
 
 This project uses Selenium to scrape scout banner information from the Uma Musume webview, including titles, dates, and images. The scraped data is saved to `info.json` for easy access.
+=======
+A Python web scraper that extracts scout event information from the Umamusume game website.
+
+## Description
+
+This project uses Selenium to scrape scout banner information from the Umamusume webview, including titles, dates, and images. The scraped data is saved to `info.json` for easy access.
+>>>>>>> 62f4382ea3f9f76917c27c4c6a1380f7eefcac3d
 
 ## Features
 
@@ -65,4 +73,8 @@ The scraped data is stored in `info.json` with the following structure:
 
 ## Automation
 
+<<<<<<< HEAD
 This project includes a GitHub Actions workflow that automatically runs the scraper every 3 days and commits any new data to the repository.
+=======
+This project includes a GitHub Actions workflow that automatically runs the scraper every 3 days and commits any new data to the repository.
+>>>>>>> 62f4382ea3f9f76917c27c4c6a1380f7eefcac3d

@@ -1,5 +1,6 @@
 {
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
+<<<<<<< HEAD
     "scouts": [
         {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Jan 15, 2026 (UTC)",
@@ -8,4 +9,8 @@
         }
     ],
     "timestamp": 1768638925.955974
+=======
+    "scouts": [],
+    "timestamp": 1768638625.792582
+>>>>>>> 62f4382ea3f9f76917c27c4c6a1380f7eefcac3d
 }
