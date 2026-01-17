@@ -42,115 +42,92 @@ def scrape_info():
         raise SystemExit("Insufficient <li> elements")
 
     scouts = []
-    processed_titles = set()
     events = []
-    processed_titles_events = set()
-    while True:
-        found = False
-        for i, li in enumerate(lis):
-            try:
-                class_attr = li.get_attribute("class")
-                text = li.text
-                print(f"LI {i}: class='{class_attr}' text='{text}'")
-                if (
-                    "type-111" in class_attr
-                ):  # Scout type  # pyright: ignore[reportOperatorIssue]
-                    print(f"Found type-111 li {i}")
-                    if text not in processed_titles:
-                        print("Processing")
-                        title = text
-                        processed_titles.add(title)
-                        try:
-                            img = li.find_element(By.TAG_NAME, "img")
-                            image_src = img.get_attribute("src")
-                        except:
-                            image_src = ""
-                        a = li.find_element(By.TAG_NAME, "a")
-                        a.click()
-                        print(f"Clicked, URL: {driver.current_url}")
-                        time.sleep(5)
-                        body_text = driver.find_element(By.TAG_NAME, "body").text
-                        print("Page text after click:")
-                        print(body_text)
-                        dates = re.findall(r".*\(UTC\).*", body_text)
-                        dates = [d.strip() for d in dates]
-                        if len(dates) > 3:
-                            date = dates[3]
-                        else:
-                            date = ""
-                        scouts.append(
-                            {"title": title, "date": date, "image": image_src}
-                        )
-                        driver.back()
-                        WebDriverWait(driver, 10).until(
-                            EC.presence_of_element_located((By.TAG_NAME, "li"))
-                        )
-                        found = True
-                        break
-                    else:
-                        print("Already processed")
-            except:
-                print(f"Error with LI {i}, skipping")
-                continue
-        if not found:
-            break
 
-    while True:
+    # Collect all scout titles
+    scout_titles = set()
+    for li in lis:
+        try:
+            class_attr = li.get_attribute("class")
+            text = li.text
+            if class_attr and "type-111" in class_attr:
+                scout_titles.add(text)
+        except:
+            continue
+
+    # Collect all event titles
+    event_titles = set()
+    for li in lis:
+        try:
+            class_attr = li.get_attribute("class")
+            text = li.text
+            if class_attr and "type-104" in class_attr:
+                event_titles.add(text)
+        except:
+            continue
+
+    # Process scouts
+    for title in scout_titles:
+        print(f"Processing scout: {title}")
+        # Refind lis to ensure validity
         lis = driver.find_elements(By.TAG_NAME, "li")
-        print(f"Found {len(lis)} <li> elements for events")
-        found = False
-        for i, li in enumerate(lis):
-            try:
-                class_attr = li.get_attribute("class")
-                text = li.text
-                print(f"LI {i}: class='{class_attr}' text='{text}'")
-                if (
-                    "type-104" in class_attr
-                ):  # Event type  # pyright: ignore[reportOperatorIssue]
-                    print(f"Found type-104 li {i}")
-                    if text not in processed_titles_events:
-                        print("Processing event")
-                        title = text
-                        processed_titles_events.add(title)
-                        try:
-                            img = li.find_element(By.TAG_NAME, "img")
-                            image_src = img.get_attribute("src")
-                        except:
-                            image_src = ""
-                        a = li.find_element(By.TAG_NAME, "a")
-                        a.click()
-                        print(f"Clicked, URL: {driver.current_url}")
-                        time.sleep(5)
-                        body_text = driver.find_element(By.TAG_NAME, "body").text
-                        print("Page text after click:")
-                        print(body_text)
-                        dates = re.findall(r".*\(UTC\).*", body_text)
-                        dates = [d.strip() for d in dates]
-                        if len(dates) > 3:
-                            date = dates[3]
-                        else:
-                            date = ""
-                        events.append(
-                            {"title": title, "date": date, "image": image_src}
-                        )
-                        driver.back()
-                        WebDriverWait(driver, 10).until(
-                            EC.presence_of_element_located((By.TAG_NAME, "li"))
-                        )
-                        found = True
-                        break
-                    else:
-                        print("Already processed event")
-            except:
-                print(f"Error with LI {i}, skipping")
-                continue
-        if not found:
-            break
+        for li in lis:
+            if li.text == title:
+                try:
+                    img = li.find_element(By.TAG_NAME, "img")
+                    image_src = img.get_attribute("src")
+                except:
+                    image_src = ""
+                a = li.find_element(By.TAG_NAME, "a")
+                a.click()
+                print(f"Clicked scout, URL: {driver.current_url}")
+                time.sleep(5)
+                body_text = driver.find_element(By.TAG_NAME, "body").text
+                dates = re.findall(r".*\(UTC\).*", body_text)
+                dates = [d.strip() for d in dates]
+                date = dates[3] if len(dates) > 3 else ""
+                if date:
+                    scouts.append({"title": title, "date": date, "image": image_src})
+                driver.get(url)
+                time.sleep(5)
+                WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.TAG_NAME, "li"))
+                )
+                break
+
+    # Process events
+    for title in event_titles:
+        print(f"Processing event: {title}")
+        # Refind lis
+        lis = driver.find_elements(By.TAG_NAME, "li")
+        for li in lis:
+            if li.text == title:
+                try:
+                    img = li.find_element(By.TAG_NAME, "img")
+                    image_src = img.get_attribute("src")
+                except:
+                    image_src = ""
+                a = li.find_element(By.TAG_NAME, "a")
+                a.click()
+                print(f"Clicked event, URL: {driver.current_url}")
+                time.sleep(5)
+                body_text = driver.find_element(By.TAG_NAME, "body").text
+                dates = re.findall(r".*\(UTC\).*", body_text)
+                dates = [d.strip() for d in dates]
+                date = dates[3] if len(dates) > 3 else ""
+                if date:
+                    events.append({"title": title, "date": date, "image": image_src})
+                driver.get(url)
+                time.sleep(5)
+                WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.TAG_NAME, "li"))
+                )
+                break
 
     driver.quit()
 
     # Save to JSON
-    data = {"url": url, "scouts": scouts, "events": events}
+    data = {"url": url, "scouts": scouts, "events": events, "timestamp": time.time()}
     with open("info.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     print("Scout and event data scraped and saved to info.json")
