@@ -21,7 +21,7 @@ jobs:
       - name: Install Chrome + ChromeDriver
         uses: browser-actions/setup-chrome@latest
         with:
-          chrome-version: 144.0.7559.59
+          chrome-version: beta
           install-chromedriver: true
           install-dependencies: true
 
