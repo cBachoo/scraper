@@ -1,8 +1,10 @@
-version: '3.8'
-
 services:
   scraper:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: scraper:latest
+    container_name: scraper
     volumes:
-      - .:/app
-    restart: "no"
+      - ${PWD}/info.json:/app/info.json
+    restart: unless-stopped
