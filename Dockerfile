@@ -23,11 +23,11 @@ RUN wget -q https://chromedriver.storage.googleapis.com/120.0.6099.109/chromedri
 WORKDIR /app
 
 # Copy requirements and install Python dependencies
-COPY requirements.txt requirements.txt
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the environment
-COPY . .
+# Copy the scraper script
+COPY scraper.py .
 
 # Run the scraper
 CMD ["python", "scraper.py"]
