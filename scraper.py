@@ -14,6 +14,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 def scrape_info():
     url = "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0"
     options = webdriver.ChromeOptions()
+    options.binary_location = '/usr/bin/chromium'
     options.add_argument("--headless")
     options.add_argument("--disable-web-security")
     options.add_argument("--allow-running-insecure-content")
@@ -24,7 +25,7 @@ def scrape_info():
     options.add_argument("--disable-dev-shm-usage")
 
     driver = webdriver.Chrome(
-        service=Service("/usr/local/bin/chromedriver"), options=options
+        service=Service('/usr/bin/chromedriver'), options=options
     )
     driver.get(url)
     print("Waiting 15 seconds for JS to load")
