@@ -6,7 +6,7 @@ set -euo pipefail
 
 # ================= CONFIG =================
 PROJECT_DIR="/root/scraper"   # ← CHANGE THIS !!
-LOG_FILE="/var/log/cronners.log"
+LOG_FILE="/var/log/cronners_script.log"
 GIT_BRANCH="docker"
 SSH_KEY="/root/.ssh/id_ed25519_cron"
 GIT_COMMIT_MSG="cron automation $(date '+%Y-%m-%d %H:%M:%S')"
