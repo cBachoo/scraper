@@ -24,12 +24,9 @@ cd "$PROJECT_DIR" || { echo "ERROR: Cannot cd to $PROJECT_DIR" >> "$LOG_FILE"; e
 # Tell git to use our dedicated cron SSH key
 export GIT_SSH_COMMAND="ssh -i $SSH_KEY -o IdentitiesOnly=yes -o StrictHostKeyChecking=no"
 
-# 1. Rebuild & restart containers
+# 1. Rebuild & run containers (wait for completion)
 echo "[$(date '+%H:%M:%S')] Running docker compose up --force-recreate --build..." >> "$LOG_FILE"
-$DOCKER_COMPOSE up -d --force-recreate --build >> "$LOG_FILE" 2>&1
-
-# Small pause - sometimes git sees files still being written
-sleep 3
+$DOCKER_COMPOSE up --force-recreate --build >> "$LOG_FILE" 2>&1
 
 # 2. Git operations - only commit if there are actual changes
 echo "[$(date '+%H:%M:%S')] Checking for changes..." >> "$LOG_FILE"
