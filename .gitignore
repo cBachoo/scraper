@@ -1,4 +1,4 @@
 chrome-bin/
 chromedriver/
 local.py
-log.txt
+log*.txt
