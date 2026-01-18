@@ -42,8 +42,8 @@ if [ "$CHANGES" -eq 0 ]; then
 else
     echo "[$(date '+%H:%M:%S')] $CHANGES change(s) found → committing & pushing" >> "$LOG_FILE"
 
-    # Add only the file you care about (safer than git add .)
-    /usr/bin/git add info.json >> "$LOG_FILE" 2>&1 || true
+    # Add modified files
+    /usr/bin/git add . >> "$LOG_FILE" 2>&1 || true
 
     # Commit (skip GPG signing - prevents hanging in cron)
     /usr/bin/git commit --no-gpg-sign -m "$GIT_COMMIT_MSG" >> "$LOG_FILE" 2>&1 || {
