@@ -7,4 +7,4 @@ services:
     container_name: scraper
     volumes:
       - ${PWD}/info.json:/app/info.json
-    restart: unless-stopped
+    restart: no
