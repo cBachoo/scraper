@@ -11,7 +11,8 @@ This project uses Selenium to scrape scout banner information from the Uma Musum
 - Automated scraping of scout events
 - Headless Chrome browser operation
 - JSON output with timestamps
-- Scheduled runs via GitHub Actions (every 3 days)
+- Docker containerization for easy deployment
+- Cron-based automation with git integration
 
 ## Installation
 
@@ -21,16 +22,16 @@ This project uses Selenium to scrape scout banner information from the Uma Musum
    cd scraper
    ```
 
-2. Install dependencies:
+2. Build the Docker image:
    ```bash
-   pip install -r requirements.txt
+   docker compose build
    ```
 
 ## Usage
 
-Run the scraper manually:
+Run the scraper manually with Docker:
 ```bash
-python scraper.py
+docker compose run scraper
 ```
 
 The scraper will:
@@ -39,10 +40,15 @@ The scraper will:
 - Extract scout event details
 - Save the data to `info.json`
 
+For local development without Docker:
+```bash
+pip install -r requirements.txt
+python scraper.py
+```
+
 ## Dependencies
 
 - beautifulsoup4==4.14.3
-- schedule==1.2.2
 - selenium==4.39.0
 - webdriver_manager==4.0.2
 
@@ -59,10 +65,25 @@ The scraped data is stored in `info.json` with the following structure:
       "image": "Image URL"
     }
   ],
-  "timestamp": 1234567890.123
+  "events": [
+    {
+      "title": "Event Title",
+      "date": "Event Date",
+      "image": "Image URL"
+    }
+  ],
+  "timestamp": "2023-12-01 12:00:00"
 }
 ```
 
 ## Automation
 
-This project includes a GitHub Actions workflow that automatically runs the scraper every 3 days and commits any new data to the repository.
+This project includes a cron script (`cronners.sh`) for automated runs. It rebuilds the Docker image, runs the scraper, and commits/pushes changes to git if any data has changed.
+
+To set up cron automation:
+1. Ensure SSH key is configured for git pushes.
+2. Add to crontab (e.g., every 3 days):
+   ```bash
+   0 0 */3 * * /path/to/scraper/cronners.sh
+   ```
+3. Check logs in `/var/log/cronners_script.log`.

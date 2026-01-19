@@ -1,3 +1,4 @@
+import datetime
 import json
 import re
 import time
@@ -14,7 +15,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 def scrape_info():
     url = "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0"
     options = webdriver.ChromeOptions()
-    options.binary_location = '/usr/bin/chromium'
+    options.binary_location = "/usr/bin/chromium"
     options.add_argument("--headless")
     options.add_argument("--disable-web-security")
     options.add_argument("--allow-running-insecure-content")
@@ -24,9 +25,7 @@ def scrape_info():
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
 
-    driver = webdriver.Chrome(
-        service=Service('/usr/bin/chromedriver'), options=options
-    )
+    driver = webdriver.Chrome(service=Service("/usr/bin/chromedriver"), options=options)
     driver.get(url)
     print("Waiting 15 seconds for JS to load")
     time.sleep(15)  # Allow JS to load
@@ -128,7 +127,12 @@ def scrape_info():
     driver.quit()
 
     # Save to JSON
-    data = {"url": url, "scouts": scouts, "events": events, "timestamp": time.time()}
+    data = {
+        "url": url,
+        "scouts": scouts,
+        "events": events,
+        "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    }
     with open("info.json", "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     print("Scout and event data scraped and saved to info.json")
