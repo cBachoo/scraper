@@ -25,7 +25,7 @@ cd "$PROJECT_DIR" || { echo "ERROR: Cannot cd to $PROJECT_DIR" >> "$LOG_FILE"; e
 export GIT_SSH_COMMAND="ssh -i $SSH_KEY -o IdentitiesOnly=yes -o StrictHostKeyChecking=no"
 
 # 1. Rebuild & (re)start containers in BACKGROUND!
-echo "[$(date '+%H:%M:%S')] Running docker compose up -d --force-recreate --build..." >> "$LOG_FILE"
+echo "[$(date '+%H:%M:%S')] Running docker compose up --force-recreate --build..." >> "$LOG_FILE"
 $DOCKER_COMPOSE up -d --force-recreate --build >> "$LOG_FILE" 2>&1 || {
     echo "[$(date '+%H:%M:%S')] ERROR: docker compose failed - check above output" >> "$LOG_FILE"
     # Optional: exit 1  ← uncomment if you want to stop on docker failure
