@@ -6,17 +6,31 @@ if a site has multiple titles/url -- parse them and store them into the json obj
 ```json
 {
   "scouts": [
-    "title":"example title",
-    dates: [
-      "dateX":"date (utc)"
-      "dateY":"date (utc)",
-      "dateZ":"date (utc)"
-    ],
-    "images": [ // check if legend races images match dates l8r, otherwise just 1 image should be fine.
-      "imgX":"link",
-      "imgY":"link",
-      "imgZ":"link",
-    ],
+    {
+      "title": "example title",
+      "dates": [
+        {
+          "dateX": "date (utc)"
+        },
+        {
+          "dateY": "date (utc)"
+        },
+        {
+          "dateZ": "date (utc)"
+        }
+      ],
+      "images": [ //images can also return only 1 
+        {
+          "imgX": "link"
+        },
+        {
+          "imgY": "link"
+        },
+        {
+          "imgZ": "link"
+        }
+      ]
+    }
   ]
 }
 ```
