@@ -16,7 +16,7 @@ if a site has multiple titles/url -- parse them and store them into the json obj
       "imgX":"link",
       "imgY":"link",
       "imgZ":"link",
-    ]
+    ],
   ]
 }
 ```
