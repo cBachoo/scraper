@@ -24,15 +24,12 @@ cd "$PROJECT_DIR" || { echo "ERROR: Cannot cd to $PROJECT_DIR" >> "$LOG_FILE"; e
 # Force correct SSH key for git (no agent in cron!)
 export GIT_SSH_COMMAND="ssh -i $SSH_KEY -o IdentitiesOnly=yes -o StrictHostKeyChecking=no"
 
-# 1. Rebuild & (re)start containers in BACKGROUND!
-echo "[$(date '+%H:%M:%S')] Running docker compose up --force-recreate --build..." >> "$LOG_FILE"
-$DOCKER_COMPOSE up -d --force-recreate --build >> "$LOG_FILE" 2>&1 || {
-    echo "[$(date '+%H:%M:%S')] ERROR: docker compose failed - check above output" >> "$LOG_FILE"
+# 1. Run scraper (rebuild if needed, wait for completion)
+echo "[$(date '+%H:%M:%S')] Running docker compose run --build scraper..." >> "$LOG_FILE"
+$DOCKER_COMPOSE run --build scraper >> "$LOG_FILE" 2>&1 || {
+    echo "[$(date '+%H:%M:%S')] ERROR: docker compose run failed - check above output" >> "$LOG_FILE"
     # Optional: exit 1  ← uncomment if you want to stop on docker failure
 }
-
-# Give containers a moment to settle (optional but helps git see fresh changes)
-sleep 60
 
 # 2. Git operations - only commit if there are actual changes
 echo "[$(date '+%H:%M:%S')] Checking for changes..." >> "$LOG_FILE"
