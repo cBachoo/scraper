@@ -3,3 +3,4 @@ chromedriver/
 local.py
 log*.txt
 *.log
+__pycache__/
