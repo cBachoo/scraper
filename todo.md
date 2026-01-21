@@ -4,13 +4,16 @@
 - new scraping/json file logic:
 only for events with title that contains "legend" in it:  -- parse them and store them into the json object
 the website page itself fomatting goes:
-image (incorrect header/banner)
+```
+image (banner)
 date (text)
 image
 date (text)
 image
 date (text)
 image
+```
+example json:
 ```json
 {
   "events": [
@@ -34,5 +37,4 @@ image
 ```
 
 ## low prio
-- implement legend race logic:
-legend races have 3 images / 3 dates -- we need to parse them corectly
+instead of ignoring/skipping based on duplicate dates, ignore based on keyword 'coming' in title
