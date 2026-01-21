@@ -37,5 +37,4 @@ example json:
 ```
 
 ## low prio
-instead of ignoring/skipping based on duplicate dates, ignore based on keyword 'coming' in title
 chanme logic similar to legend (multiple dates, 1 img)
