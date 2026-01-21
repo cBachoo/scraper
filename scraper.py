@@ -1,142 +1,208 @@
 import datetime
 import json
-import re
 import time
 
-from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
+
+# Constants
+BASE_URL = (
+    "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0"
+)
+SCOUT_CLASS = "type-111"
+EVENT_CLASS = "type-104"
+JS_LOAD_WAIT = 15
+PAGE_RENDER_WAIT = 5
+NAVIGATE_BACK_WAIT = 2
+TIMEOUT = 10
 
 
-def scrape_info():
-    url = "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0"
+def setup_chrome_driver():
+    """Configure and return a Chrome WebDriver instance."""
     options = webdriver.ChromeOptions()
     options.binary_location = "/usr/bin/chromium"
     options.add_argument("--headless")
     options.add_argument("--disable-web-security")
     options.add_argument("--allow-running-insecure-content")
     options.add_argument(
-        "--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        "--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     )
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
 
-    driver = webdriver.Chrome(service=Service("/usr/bin/chromedriver"), options=options)
-    driver.get(url)
-    print("Waiting 15 seconds for JS to load")
-    time.sleep(15)  # Allow JS to load
-    print(f"Page title: {driver.title}")
+    return webdriver.Chrome(service=Service("/usr/bin/chromedriver"), options=options)
 
-    # Initial check for sufficient elements
+
+def get_titles(driver, class_name):
+    """Collect unique titles for items with the given class name."""
+    lis = driver.find_elements(By.TAG_NAME, "li")
+    titles = []
+    for li in lis:
+        try:
+            class_attr = li.get_attribute("class")
+            text = li.text
+            if class_attr and class_name in class_attr and text not in titles:
+                titles.append(text)
+        except Exception:
+            continue
+    return titles
+
+
+def get_page_text_and_images(driver):
+    """Extract body text and image sources from current page."""
+    body_text = driver.find_element(By.TAG_NAME, "body").text
+    lines = body_text.split("\n")
+
+    imgs = driver.find_elements(By.TAG_NAME, "img")
+    images = [img.get_attribute("src") for img in imgs if img.get_attribute("src")]
+
+    return lines, images
+
+
+def extract_dates(lines):
+    """Extract dates with time ranges containing (UTC) and dash."""
+    return [line.strip() for line in lines if "(UTC)" in line and "-" in line]
+
+
+def create_legend_pairs(dates_list, all_images):
+    """Create date-image pairs for legend events, skipping the banner image."""
+    # Skip the first image (banner) and match remaining images with dates
+    character_images = all_images[1:] if len(all_images) > 1 else all_images
+
+    # Create date-image pairs
+    min_count = min(len(dates_list), len(character_images))
+    return [
+        {"date": dates_list[i], "image": character_images[i]} for i in range(min_count)
+    ]
+
+
+def extract_legend_data(driver, title):
+    """Extract data for legend race events."""
+    lines, all_images = get_page_text_and_images(driver)
+    dates_list = extract_dates(lines)
+    date_image_pairs = create_legend_pairs(dates_list, all_images)
+
+    print(f"  Found {len(date_image_pairs)} legend race entries")
+
+    return {"title": title, "legend": date_image_pairs}
+
+
+def extract_standard_data(driver, title):
+    """Extract data for standard scouts and events."""
+    lines, images = get_page_text_and_images(driver)
+    dates = extract_dates(lines)
+
+    date = dates[0].strip() if dates else ""
+    image = images[0] if images else ""
+
+    if date:
+        return {"title": title, "date": date, "image": image}
+    return None
+
+
+def extract_data_from_page(driver, title, item_type):
+    """Extract data from the current page based on item type."""
+    print(f"Processing {item_type}: {title}")
+
+    if item_type == "event" and "legend" in title.lower():
+        return extract_legend_data(driver, title)
+    else:
+        return extract_standard_data(driver, title)
+
+
+def click_and_extract(driver, base_url, title, item_type):
+    """Click on an item, extract its data, and navigate back."""
+    lis = driver.find_elements(By.TAG_NAME, "li")
+    for li in lis:
+        if li.text == title:
+            a = li.find_element(By.TAG_NAME, "a")
+            a.click()
+            time.sleep(PAGE_RENDER_WAIT)
+
+            # Extract data immediately while we're on the page
+            data = extract_data_from_page(driver, title, item_type)
+
+            # Navigate back to list
+            driver.get(base_url)
+            time.sleep(NAVIGATE_BACK_WAIT)
+            WebDriverWait(driver, TIMEOUT).until(
+                EC.presence_of_element_located((By.TAG_NAME, "li"))
+            )
+
+            return data
+    return None
+
+
+def scrape_items_by_clicking(driver, base_url, titles, item_type):
+    """Click each item and extract data immediately while on the page."""
+    scraped = []
+    for title in titles:
+        try:
+            data = click_and_extract(driver, base_url, title, item_type)
+            if data:
+                scraped.append(data)
+        except Exception as e:
+            print(f"Error processing {title}: {e}")
+            continue
+    return scraped
+
+
+def validate_page_loaded(driver):
+    """Check that sufficient page elements have loaded."""
     lis = driver.find_elements(By.TAG_NAME, "li")
     print(f"Found {len(lis)} <li> elements")
     if len(lis) <= 3:
-        print(
-            "Error: Found only {} <li> elements, expected more than 3".format(len(lis))
+        raise SystemExit(
+            f"Error: Found only {len(lis)} <li> elements, expected more than 3"
         )
-        driver.quit()
-        raise SystemExit("Insufficient <li> elements")
 
-    scouts = []
-    events = []
 
-    # Collect all scout titles
-    scout_titles = set()
-    for li in lis:
-        try:
-            class_attr = li.get_attribute("class")
-            text = li.text
-            if class_attr and "type-111" in class_attr:
-                scout_titles.add(text)
-        except:
-            continue
-
-    # Collect all event titles
-    event_titles = set()
-    for li in lis:
-        try:
-            class_attr = li.get_attribute("class")
-            text = li.text
-            if class_attr and "type-104" in class_attr:
-                event_titles.add(text)
-        except:
-            continue
-
-    # Process scouts
-    for title in scout_titles:
-        print(f"Processing scout: {title}")
-        # Refind lis to ensure validity
-        lis = driver.find_elements(By.TAG_NAME, "li")
-        for li in lis:
-            if li.text == title:
-                try:
-                    img = li.find_element(By.TAG_NAME, "img")
-                    image_src = img.get_attribute("src")
-                except:
-                    image_src = ""
-                a = li.find_element(By.TAG_NAME, "a")
-                a.click()
-                print(f"Clicked scout, URL: {driver.current_url}")
-                time.sleep(5)
-                body_text = driver.find_element(By.TAG_NAME, "body").text
-                dates = re.findall(r".*\(UTC\).*", body_text)
-                dates = [d.strip() for d in dates]
-                date = dates[3] if len(dates) > 3 else ""
-                if date:
-                    scouts.append({"title": title, "date": date, "image": image_src})
-                driver.get(url)
-                time.sleep(5)
-                WebDriverWait(driver, 10).until(
-                    EC.presence_of_element_located((By.TAG_NAME, "li"))
-                )
-                break
-
-    # Process events
-    for title in event_titles:
-        print(f"Processing event: {title}")
-        # Refind lis
-        lis = driver.find_elements(By.TAG_NAME, "li")
-        for li in lis:
-            if li.text == title:
-                try:
-                    img = li.find_element(By.TAG_NAME, "img")
-                    image_src = img.get_attribute("src")
-                except:
-                    image_src = ""
-                a = li.find_element(By.TAG_NAME, "a")
-                a.click()
-                print(f"Clicked event, URL: {driver.current_url}")
-                time.sleep(5)
-                body_text = driver.find_element(By.TAG_NAME, "body").text
-                dates = re.findall(r".*\(UTC\).*", body_text)
-                dates = [d.strip() for d in dates]
-                date = dates[3] if len(dates) > 3 else ""
-                if date:
-                    events.append({"title": title, "date": date, "image": image_src})
-                driver.get(url)
-                time.sleep(5)
-                WebDriverWait(driver, 10).until(
-                    EC.presence_of_element_located((By.TAG_NAME, "li"))
-                )
-                break
-
-    driver.quit()
-
-    # Save to JSON
-    data = {
-        "url": url,
-        "scouts": scouts,
-        "events": events,
-        "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-    }
-    with open("info.json", "w", encoding="utf-8") as f:
+def save_to_json(data, filename="info.json"):
+    """Save scraped data to JSON file."""
+    with open(filename, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
-    print("Scout and event data scraped and saved to info.json")
+    print(f"Scout and event data scraped and saved to {filename}")
 
 
-# Run once
-scrape_info()
+def scrape_info():
+    """Main scraping function."""
+    driver = setup_chrome_driver()
+
+    try:
+        driver.get(BASE_URL)
+        print(f"Waiting {JS_LOAD_WAIT} seconds for JS to load")
+        time.sleep(JS_LOAD_WAIT)
+        print(f"Page title: {driver.title}")
+
+        # Validate page loaded correctly
+        validate_page_loaded(driver)
+
+        # Collect titles
+        scout_titles = get_titles(driver, SCOUT_CLASS)
+        event_titles = get_titles(driver, EVENT_CLASS)
+        print(f"Found {len(scout_titles)} scouts ({SCOUT_CLASS})")
+        print(f"Found {len(event_titles)} events ({EVENT_CLASS})")
+
+        # Scrape data by clicking and extracting immediately
+        scouts = scrape_items_by_clicking(driver, BASE_URL, scout_titles, "scout")
+        events = scrape_items_by_clicking(driver, BASE_URL, event_titles, "event")
+
+        # Prepare and save data
+        data = {
+            "url": BASE_URL,
+            "scouts": scouts,
+            "events": events,
+            "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        }
+        save_to_json(data)
+
+    finally:
+        driver.quit()
+
+
+if __name__ == "__main__":
+    scrape_info()

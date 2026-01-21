@@ -2,40 +2,40 @@
 
 ## high prio
 - new scraping/json file logic:
-if a site has multiple titles/url -- parse them and store them into the json object, e.g
+only for events with title that contains "legend" in it:  -- parse them and store them into the json object
+the website page itself fomatting goes:
+```
+image (banner)
+date (text)
+image
+date (text)
+image
+date (text)
+image
+```
+example json:
 ```json
 {
-  "scouts": [
+  "events": [
     {
-      "title": "example title",
-      "dates": [
-        {
-          "dateX": "date (utc)"
-        },
-        {
-          "dateY": "date (utc)"
-        },
-        {
-          "dateZ": "date (utc)"
-        }
-      ],
-      "images": [ //images can also return only 1 
-        {
-          "imgX": "link"
-        },
-        {
-          "imgY": "link"
-        },
-        {
-          "imgZ": "link"
-        }
-      ]
+      "title": "title",
+      "legend": {
+          "dates": [
+              "dateX",
+              "dateY",
+              "dateZ",
+          ],
+          "images": [
+              "imageX",
+              "imageY",
+              "imageZ",
+          ]
+      }
     }
   ]
 }
 ```
-- instead of ignoring/skipping based on duplicate dates, ignore based on keyword 'coming' in title
 
 ## low prio
-- implement legend race logic:
-legend races have 3 images / 3 dates -- we need to parse them corectly
+instead of ignoring/skipping based on duplicate dates, ignore based on keyword 'coming' in title
+chanme logic similar to legend (multiple dates, 1 img)
