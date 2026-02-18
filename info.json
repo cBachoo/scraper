@@ -2,27 +2,32 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
-            "title": "Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Feb 5, 2026 (UTC)",
-            "date": "10:00 p.m., Feb 5 - 9:59 p.m., Feb 14, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3064_2_L1770328800.png?c=20260115104624&version=1770786003760"
+            "title": "New Spotlight Pretty Derby and Spotlight Support Card Scouts coming soon!\n10:00 p.m., Feb 17, 2026 (UTC)",
+            "date": "10:00 p.m., Feb 18 - 9:59 p.m., Mar 1, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3068_L1771365600.png?c=20260116105933&version=1771390874117"
         },
         {
-            "title": "3★ Guaranteed New Year's Scout and SSR Guaranteed New Year's Scout now available!\n10:00 p.m., Feb 5, 2026 (UTC)",
-            "date": "10:00 p.m., Feb 5 - 9:59 p.m., Mar 25, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_5005_L1770328800.png?c=20260114095123&version=1770786003760"
+            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Feb 11, 2026 (UTC)",
+            "date": "10:00 p.m., Feb 11 - 9:59 p.m., Feb 19, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3066_L1770847200.png?c=20260114011021&version=1771390874117"
+        },
+        {
+            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts coming soon!\n10:00 p.m., Feb 10, 2026 (UTC)",
+            "date": "10:00 p.m., Feb 11 - 9:59 p.m., Feb 19, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3066_L1770760800.png?c=20260106112616&version=1771390874117"
         }
     ],
     "events": [
         {
-            "title": "The league selection period for the Champions Meeting: Capricorn Cup has begun!\n10:00 p.m., Feb 9, 2026 (UTC)",
+            "title": "The race event Champions Meeting: Capricorn Cup is here!\n10:00 p.m., Feb 13, 2026 (UTC)",
             "date": "10:00 p.m., Feb 13 - 9:59 p.m., Feb 19, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30300101_L1770674400.png?c=20260106111835&version=1770786003760"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30310101_L1771020000.png?c=20260114011448&version=1771390874117"
         },
         {
-            "title": "The event \"Racing Carnival\" is here!\n10:00 p.m., Feb 5, 2026 (UTC)",
-            "date": "10:00 p.m., Feb 5 - 9:59 p.m., Feb 12, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30700002_L1770328800.png?c=20260123104745&version=1770786003760"
+            "title": "The league selection period for the Champions Meeting: Capricorn Cup has begun!\n10:00 p.m., Feb 9, 2026 (UTC)",
+            "date": "10:00 p.m., Feb 13 - 9:59 p.m., Feb 19, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30300101_L1770674400.png?c=20260106111835&version=1771390874117"
         }
     ],
-    "timestamp": "2026-02-11 05:01:02"
+    "timestamp": "2026-02-18 05:02:20"
 }
