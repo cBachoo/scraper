@@ -1,5 +1,6 @@
 import datetime
 import json
+import re
 import time
 
 from selenium import webdriver
@@ -78,6 +79,35 @@ def create_legend_pairs(dates_list, all_images):
     return [
         {"date": dates_list[i], "image": character_images[i]} for i in range(min_count)
     ]
+
+
+def extract_banner_id(image_url):
+    """Extract the numeric banner ID from an image URL (e.g. 3068 from banner_3068_...)."""
+    match = re.search(r'banner_(\d+)', image_url)
+    return match.group(1) if match else None
+
+
+def deduplicate_items(items):
+    """Remove 'coming soon' entries when a live version of the same banner exists."""
+    # Collect banner IDs that already have a live (non-coming) entry
+    live_banners = set()
+    for item in items:
+        image = item.get("image", "")
+        if image and "coming" not in item.get("title", "").lower():
+            banner_id = extract_banner_id(image)
+            if banner_id:
+                live_banners.add(banner_id)
+
+    result = []
+    for item in items:
+        image = item.get("image", "")
+        if "coming" in item.get("title", "").lower() and image:
+            banner_id = extract_banner_id(image)
+            if banner_id and banner_id in live_banners:
+                print(f"  Skipping duplicate (banner {banner_id}): {item['title'][:60]}")
+                continue
+        result.append(item)
+    return result
 
 
 def extract_legend_data(driver, title):
@@ -188,8 +218,8 @@ def scrape_info():
         print(f"Found {len(event_titles)} events ({EVENT_CLASS})")
 
         # Scrape data by clicking and extracting immediately
-        scouts = scrape_items_by_clicking(driver, BASE_URL, scout_titles, "scout")
-        events = scrape_items_by_clicking(driver, BASE_URL, event_titles, "event")
+        scouts = deduplicate_items(scrape_items_by_clicking(driver, BASE_URL, scout_titles, "scout"))
+        events = deduplicate_items(scrape_items_by_clicking(driver, BASE_URL, event_titles, "event"))
 
         # Prepare and save data
         data = {
