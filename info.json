@@ -2,34 +2,22 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
-            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Feb 25, 2026 (UTC)",
-            "date": "10:00 p.m., Feb 25 - 9:59 p.m., Mar 5, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3070_L1772056800.png?c=20260122112908&version=1772600475233"
+            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Mar 5, 2026 (UTC)",
+            "date": "10:00 p.m., Mar 5 - 9:59 p.m., Mar 13, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3072_L1772748000.png?c=20260202080229&version=1772994221387"
         }
     ],
     "events": [
         {
-            "title": "The league selection period for the Champions Meeting: Aquarius Cup has begun!\n10:00 p.m., Mar 2, 2026 (UTC)",
+            "title": "The race event Champions Meeting: Aquarius Cup is here!\n10:00 p.m., Mar 6, 2026 (UTC)",
             "date": "10:00 p.m., Mar 6 - 9:59 p.m., Mar 12, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30300201_L1772488800.png?c=20260205075819&version=1772600475233"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30310201_L1772834400.png?c=20260205100337&version=1772994221387"
         },
         {
-            "title": "A Legend Race is here!\n10:00 p.m., Feb 26, 2026 (UTC)",
-            "legend": [
-                {
-                    "date": "10:00 p.m., Feb 26 - 2:59 p.m., Mar 1, 2026 (UTC)",
-                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200091_L1772143200.png?c=20260122113928"
-                },
-                {
-                    "date": "3:00 p.m., Mar 1 - 2:59 p.m., Mar 4, 2026 (UTC)",
-                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200092_L1772143200.png?c=20260122113928"
-                },
-                {
-                    "date": "3:00 p.m., Mar 4 - 2:59 p.m., Mar 7, 2026 (UTC)",
-                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200093_L1772143200.png?c=20260122113928"
-                }
-            ]
+            "title": "The league selection period for the Champions Meeting: Aquarius Cup has begun!\n10:00 p.m., Mar 2, 2026 (UTC)",
+            "date": "10:00 p.m., Mar 6 - 9:59 p.m., Mar 12, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30300201_L1772488800.png?c=20260205075819&version=1772994221387"
         }
     ],
-    "timestamp": "2026-03-04 05:02:07"
+    "timestamp": "2026-03-08 18:24:26"
 }
