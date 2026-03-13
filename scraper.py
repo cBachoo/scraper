@@ -66,7 +66,7 @@ def get_page_text_and_images(driver):
 
 def extract_dates(lines):
     """Extract dates with time ranges containing (UTC) and dash."""
-    return [line.strip() for line in lines if "(UTC)" in line and "-" in line]
+    return [line.strip() for line in lines if "(UTC)" in line and " - " in line]
 
 
 def create_legend_pairs(dates_list, all_images):
@@ -83,7 +83,7 @@ def create_legend_pairs(dates_list, all_images):
 
 def extract_banner_id(image_url):
     """Extract the numeric banner ID from an image URL (e.g. 3068 from banner_3068_...)."""
-    match = re.search(r'banner_(\d+)', image_url)
+    match = re.search(r"banner_(\d+)", image_url)
     return match.group(1) if match else None
 
 
@@ -104,7 +104,9 @@ def deduplicate_items(items):
         if "coming" in item.get("title", "").lower() and image:
             banner_id = extract_banner_id(image)
             if banner_id and banner_id in live_banners:
-                print(f"  Skipping duplicate (banner {banner_id}): {item['title'][:60]}")
+                print(
+                    f"  Skipping duplicate (banner {banner_id}): {item['title'][:60]}"
+                )
                 continue
         result.append(item)
     return result
@@ -218,8 +220,12 @@ def scrape_info():
         print(f"Found {len(event_titles)} events ({EVENT_CLASS})")
 
         # Scrape data by clicking and extracting immediately
-        scouts = deduplicate_items(scrape_items_by_clicking(driver, BASE_URL, scout_titles, "scout"))
-        events = deduplicate_items(scrape_items_by_clicking(driver, BASE_URL, event_titles, "event"))
+        scouts = deduplicate_items(
+            scrape_items_by_clicking(driver, BASE_URL, scout_titles, "scout")
+        )
+        events = deduplicate_items(
+            scrape_items_by_clicking(driver, BASE_URL, event_titles, "event")
+        )
 
         # Prepare and save data
         data = {
