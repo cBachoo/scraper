@@ -4,15 +4,32 @@
         {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Mar 12, 2026 (UTC)",
             "date": "10:00 p.m., Mar 12 - 9:59 p.m., Mar 23, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3074_L1773352800.png?c=20260130014433&version=1773892808026"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3074_L1773352800.png?c=20260130014433&version=1774065607486"
         }
     ],
     "events": [
         {
+            "title": "A Legend Race is coming soon!\n10:00 p.m., Mar 19, 2026 (UTC)",
+            "legend": [
+                {
+                    "date": "10:00 p.m., Mar 23 - 2:59 p.m., Mar 26, 2026 (UTC)",
+                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200101_L1773957600.png?c=20260202091150"
+                },
+                {
+                    "date": "3:00 p.m., Mar 26 - 2:59 p.m., Mar 29, 2026 (UTC)",
+                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200102_L1773957600.png?c=20260202091150"
+                },
+                {
+                    "date": "3:00 p.m., Mar 29 - 2:59 p.m., Apr 1, 2026 (UTC)",
+                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200103_L1773957600.png?c=20260202091150"
+                }
+            ]
+        },
+        {
             "title": "The story event \"Flying Run-Up!\" is here!\n10:00 p.m., Mar 12, 2026 (UTC)",
             "date": "10:00 p.m., Mar 12 - 9:59 p.m., Mar 23, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100022_L1773352800.png?c=20260309081406&version=1773892808026"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100022_L1773352800.png?c=20260309081406&version=1774065607486"
         }
     ],
-    "timestamp": "2026-03-19 04:00:45"
+    "timestamp": "2026-03-21 04:00:52"
 }
