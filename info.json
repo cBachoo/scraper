@@ -2,9 +2,14 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
-            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Mar 12, 2026 (UTC)",
-            "date": "10:00 p.m., Mar 12 - 9:59 p.m., Mar 23, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3074_L1773352800.png?c=20260130014433&version=1774065607486"
+            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Mar 22, 2026 (UTC)",
+            "date": "10:00 p.m., Mar 22 - 9:59 p.m., Apr 2, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3076_L1774216800.png?c=20260202093950&version=1774238405214"
+        },
+        {
+            "title": "3★ Guaranteed and SSR Guaranteed 1st Anniversary Scouts are now available!\n10:00 p.m., Mar 22, 2026 (UTC)",
+            "date": "10:00 p.m., Mar 22 - 9:59 p.m., Apr 13, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_5007_L1774216800.png?c=20260313055513&version=1774238405214"
         }
     ],
     "events": [
@@ -24,12 +29,7 @@
                     "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200103_L1773957600.png?c=20260202091150"
                 }
             ]
-        },
-        {
-            "title": "The story event \"Flying Run-Up!\" is here!\n10:00 p.m., Mar 12, 2026 (UTC)",
-            "date": "10:00 p.m., Mar 12 - 9:59 p.m., Mar 23, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100022_L1773352800.png?c=20260309081406&version=1774065607486"
         }
     ],
-    "timestamp": "2026-03-21 04:00:52"
+    "timestamp": "2026-03-23 04:00:57"
 }
