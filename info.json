@@ -2,17 +2,17 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
-            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Mar 22, 2026 (UTC)",
-            "date": "10:00 p.m., Mar 22 - 9:59 p.m., Apr 2, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3076_L1774216800.png?c=20260202093950&version=1774411205103"
-        },
-        {
-            "title": "3★ Guaranteed and SSR Guaranteed 1st Anniversary Scouts are now available!\n10:00 p.m., Mar 22, 2026 (UTC)",
-            "date": "10:00 p.m., Mar 22 - 9:59 p.m., Apr 13, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_5007_L1774216800.png?c=20260313055513&version=1774411205103"
+            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Mar 26, 2026 (UTC)",
+            "date": "10:00 p.m., Mar 26 - 9:59 p.m., Apr 6, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3078_L1774562400.png?c=20260203014755&version=1774584006973"
         }
     ],
     "events": [
+        {
+            "title": "The league selection period for the Champions Meeting: Pisces Cup has begun!\n10:00 p.m., Mar 26, 2026 (UTC)",
+            "date": "10:00 p.m., Mar 30 - 9:59 p.m., Apr 5, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30300301_L1774562400.png?c=20260210010558&version=1774584006973"
+        },
         {
             "title": "A Legend Race is here!\n10:00 p.m., Mar 23, 2026 (UTC)",
             "legend": [
@@ -31,5 +31,5 @@
             ]
         }
     ],
-    "timestamp": "2026-03-25 04:00:56"
+    "timestamp": "2026-03-27 04:01:05"
 }
