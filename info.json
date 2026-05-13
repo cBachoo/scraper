@@ -4,14 +4,14 @@
         {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., May 10, 2026 (UTC)",
             "date": "10:00 p.m., May 10 - 9:59 p.m., May 20, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3090_L1778450400.png?c=20260420092815&version=1778472004898"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3090_L1778450400.png?c=20260420092815&version=1778644807188"
         }
     ],
     "events": [
         {
             "title": "The league selection period for the Champions Meeting: Taurus Cup has begun!\n10:00 p.m., May 10, 2026 (UTC)",
             "date": "10:00 p.m., May 14 - 9:59 p.m., May 20, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30300502_L1778450400.png?c=20260413074714&version=1778472004898"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30300502_L1778450400.png?c=20260413074714&version=1778644807188"
         },
         {
             "title": "A Legend Race is here!\n10:00 p.m., May 7, 2026 (UTC)",
@@ -29,24 +29,7 @@
                     "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200113_L1778191200.png?c=20260403074409"
                 }
             ]
-        },
-        {
-            "title": "A Legend Race is coming soon!\n10:00 p.m., May 3, 2026 (UTC)",
-            "legend": [
-                {
-                    "date": "10:00 p.m., May 7 - 2:59 p.m., May 10, 2026 (UTC)",
-                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200111_L1777845600.png?c=20260302081208"
-                },
-                {
-                    "date": "3:00 p.m., May 10 - 2:59 p.m., May 13, 2026 (UTC)",
-                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200112_L1777845600.png?c=20260302081208"
-                },
-                {
-                    "date": "3:00 p.m., May 13 - 2:59 p.m., May 16, 2026 (UTC)",
-                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200113_L1777845600.png?c=20260302081208"
-                }
-            ]
         }
     ],
-    "timestamp": "2026-05-11 04:01:11"
+    "timestamp": "2026-05-13 04:01:06"
 }
