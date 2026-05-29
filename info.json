@@ -2,22 +2,22 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
+            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., May 28, 2026 (UTC)",
+            "date": "10:00 p.m., May 28 - 9:59 p.m., Jun 7, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3094_L1780005600.png?c=20260330074555&version=1780027267736"
+        },
+        {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., May 18, 2026 (UTC)",
             "date": "10:00 p.m., May 18 - 9:59 p.m., May 29, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3092_L1779141600.png?c=20260415030121&version=1779854404852"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3092_L1779141600.png?c=20260415030121&version=1780027267736"
         }
     ],
     "events": [
         {
             "title": "The story event \"The Promised Hour: Silks & Three Riddles\" is here!\n10:00 p.m., May 18, 2026 (UTC)",
             "date": "10:00 p.m., May 18 - 9:59 p.m., May 29, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100028_L1779141600.png?c=20260317085635&version=1779854404852"
-        },
-        {
-            "title": "The race event Champions Meeting: Taurus Cup is here!\n10:00 p.m., May 14, 2026 (UTC)",
-            "date": "10:00 p.m., May 14 - 9:59 p.m., May 20, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30310502_L1778796000.png?c=20260413061559&version=1779854404852"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100028_L1779141600.png?c=20260317085635&version=1780027267736"
         }
     ],
-    "timestamp": "2026-05-27 04:00:56"
+    "timestamp": "2026-05-29 04:02:06"
 }
