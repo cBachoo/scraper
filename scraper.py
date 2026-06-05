@@ -123,6 +123,31 @@ def extract_legend_data(driver, title):
     return {"title": title, "legend": date_image_pairs}
 
 
+_UMA_RE = re.compile(r"^[★☆]{1,3}\s+(.+)")
+_SUPPORT_RE = re.compile(r"^[•・]\s*(SSR|SR|R)\s+(.+)")
+
+
+def extract_featured_banners(lines):
+    uma, supports, section = [], [], None
+    for raw in lines:
+        line = raw.strip()
+        if not line:
+            continue
+        if "■" in line:
+            lower = line.lower()
+            section = (
+                "uma" if "debut trainee umamusume" in lower
+                else "support" if "debut support cards" in lower
+                else None
+            )
+            continue
+        if section == "uma" and (m := _UMA_RE.match(line)):
+            uma.append(m.group(1).strip())
+        elif section == "support" and (m := _SUPPORT_RE.match(line)):
+            supports.append({"rarity": m.group(1), "name": m.group(2).strip()})
+    return uma, supports
+
+
 def extract_standard_data(driver, title):
     """Extract data for standard scouts and events."""
     lines, images = get_page_text_and_images(driver)
@@ -131,9 +156,18 @@ def extract_standard_data(driver, title):
     date = dates[0].strip() if dates else ""
     image = images[0] if images else ""
 
-    if date:
-        return {"title": title, "date": date, "image": image}
-    return None
+    if not date:
+        return None
+
+    result = {"title": title, "date": date, "image": image}
+
+    uma, supports = extract_featured_banners(lines)
+    if uma:
+        result["featured_uma"] = uma
+    if supports:
+        result["featured_supports"] = supports
+
+    return result
 
 
 def extract_data_from_page(driver, title, item_type):
