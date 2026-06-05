@@ -2,22 +2,35 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
-            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., May 28, 2026 (UTC)",
-            "date": "10:00 p.m., May 28 - 9:59 p.m., Jun 7, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3094_L1780005600.png?c=20260330074555&version=1780459204276"
-        },
-        {
-            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., May 18, 2026 (UTC)",
-            "date": "10:00 p.m., May 18 - 9:59 p.m., May 29, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3092_L1779141600.png?c=20260415030121&version=1780459204276"
+            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Jun 4, 2026 (UTC)",
+            "date": "10:00 p.m., Jun 4 - 9:59 p.m., Jun 14, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3096_L1780610400.png?c=20260424065835&version=1780632061348"
         }
     ],
     "events": [
         {
-            "title": "The league selection period for the Champions Meeting: Gemini Cup has begun!\n10:00 p.m., May 31, 2026 (UTC)",
+            "title": "Fuji Kiseki's Showtime is here!\n10:00 p.m., Jun 4, 2026 (UTC)",
+            "date": "10:00 p.m., Jun 4 - 9:59 p.m., Jun 14, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_23000001_L1780610400.png?c=20260406015021&version=1780632061348"
+        },
+        {
+            "title": "The race event Champions Meeting: Gemini Cup is here!\n10:00 p.m., Jun 4, 2026 (UTC)",
             "date": "10:00 p.m., Jun 4 - 9:59 p.m., Jun 10, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30300602_L1780264800.png?c=20260424064403&version=1780459204276"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30310602_L1780610400.png?c=20260420102609&version=1780632061348"
+        },
+        {
+            "title": "A Legend Race is coming soon!\n10:00 p.m., Jun 3, 2026 (UTC)",
+            "legend": [
+                {
+                    "date": "10:00 p.m., Jun 7 - 2:59 p.m., Jun 10, 2026 (UTC)",
+                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200121_L1780524000.png?c=20260330073702"
+                },
+                {
+                    "date": "3:00 p.m., Jun 10 - 2:59 p.m., Jun 13, 2026 (UTC)",
+                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200122_L1780524000.png?c=20260330073702"
+                }
+            ]
         }
     ],
-    "timestamp": "2026-06-03 04:01:03"
+    "timestamp": "2026-06-05 04:02:07"
 }
