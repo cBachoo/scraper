@@ -87,25 +87,43 @@ def extract_banner_id(image_url):
     return match.group(1) if match else None
 
 
+def get_item_banner_ids(item):
+    """Collect all banner IDs for an item, including nested legend race images."""
+    banner_ids = set()
+    image = item.get("image", "")
+    if image:
+        banner_id = extract_banner_id(image)
+        if banner_id:
+            banner_ids.add(banner_id)
+    # Legend events store their images inside a "legend" list rather than at the top level
+    for entry in item.get("legend", []):
+        banner_id = extract_banner_id(entry.get("image", ""))
+        if banner_id:
+            banner_ids.add(banner_id)
+    return banner_ids
+
+
+def is_coming_soon(item):
+    """Return True if the item's title marks it as an upcoming (not yet live) entry."""
+    return "coming" in item.get("title", "").lower()
+
+
 def deduplicate_items(items):
     """Remove 'coming soon' entries when a live version of the same banner exists."""
-    # Collect banner IDs that already have a live (non-coming) entry
+    # Collect banner IDs that already have a live (non-coming, e.g. "here") entry
     live_banners = set()
     for item in items:
-        image = item.get("image", "")
-        if image and "coming" not in item.get("title", "").lower():
-            banner_id = extract_banner_id(image)
-            if banner_id:
-                live_banners.add(banner_id)
+        if not is_coming_soon(item):
+            live_banners.update(get_item_banner_ids(item))
 
     result = []
     for item in items:
-        image = item.get("image", "")
-        if "coming" in item.get("title", "").lower() and image:
-            banner_id = extract_banner_id(image)
-            if banner_id and banner_id in live_banners:
+        if is_coming_soon(item):
+            banner_ids = get_item_banner_ids(item)
+            if banner_ids and banner_ids <= live_banners:
                 print(
-                    f"  Skipping duplicate (banner {banner_id}): {item['title'][:60]}"
+                    f"  Skipping duplicate (banners {sorted(banner_ids)}): "
+                    f"{item['title'][:60]}"
                 )
                 continue
         result.append(item)

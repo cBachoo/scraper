@@ -1,7 +1,7 @@
 # todo
 
 ## high prio
-potentially check/test dropping all events that have 'coming' in it so that it only generates current events
+add in JP region scraping and section that output should be in a new jp_info.json file.
+the JP link is: 
 
 ## low prio
-chanme logic similar to legend (multiple dates, 1 img)
