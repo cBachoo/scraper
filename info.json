@@ -2,9 +2,9 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
-            "title": "New Spotlight Pretty Derby and Spotlight Support Card Scouts coming soon!\n10:00 p.m., Jun 10, 2026 (UTC)",
+            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Jun 11, 2026 (UTC)",
             "date": "10:00 p.m., Jun 11 - 9:59 p.m., Jun 22, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3098_L1781128800.png?c=20260507083426&version=1781150403237",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3098_L1781215200.png?c=20260512084153&version=1781323260119",
             "featured_uma": [
                 "[Bubblegum☆Memories] Taiki Shuttle",
                 "[Sapphire Sojourn] Mejiro Dober"
@@ -23,7 +23,7 @@
         {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Jun 4, 2026 (UTC)",
             "date": "10:00 p.m., Jun 4 - 9:59 p.m., Jun 14, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3096_L1780610400.png?c=20260424065835&version=1781150403237",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3096_L1780610400.png?c=20260424065835&version=1781323260119",
             "featured_uma": [
                 "[Platanus Witch] Sweep Tosho"
             ],
@@ -41,6 +41,11 @@
     ],
     "events": [
         {
+            "title": "The story event \"Search! Solve! Summer!\" is here!\n10:00 p.m., Jun 11, 2026 (UTC)",
+            "date": "10:00 p.m., Jun 11 - 9:59 p.m., Jun 22, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100030_L1781215200.png?c=20260410014031&version=1781323260119"
+        },
+        {
             "title": "A Legend Race is here!\n10:00 p.m., Jun 7, 2026 (UTC)",
             "legend": [
                 {
@@ -56,13 +61,13 @@
         {
             "title": "Fuji Kiseki's Showtime is here!\n10:00 p.m., Jun 4, 2026 (UTC)",
             "date": "10:00 p.m., Jun 4 - 9:59 p.m., Jun 14, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_23000001_L1780610400.png?c=20260406015021&version=1781150403237"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_23000001_L1780610400.png?c=20260406015021&version=1781323260119"
         },
         {
             "title": "The race event Champions Meeting: Gemini Cup is here!\n10:00 p.m., Jun 4, 2026 (UTC)",
             "date": "10:00 p.m., Jun 4 - 9:59 p.m., Jun 10, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30310602_L1780610400.png?c=20260420102609&version=1781150403237"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30310602_L1780610400.png?c=20260420102609&version=1781323260119"
         }
     ],
-    "timestamp": "2026-06-11 04:01:16"
+    "timestamp": "2026-06-13 04:02:06"
 }
