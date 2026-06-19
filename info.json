@@ -2,9 +2,27 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
+            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Jun 18, 2026 (UTC)",
+            "date": "10:00 p.m., Jun 18 - 9:59 p.m., Jun 27, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3100_L1781820000.png?c=20260417094711&version=1781841603158",
+            "featured_uma": [
+                "[unsigned] Air Shakur"
+            ],
+            "featured_supports": [
+                {
+                    "rarity": "SSR",
+                    "name": "[Tailwind to My Goals] Air Groove"
+                },
+                {
+                    "rarity": "SR",
+                    "name": "[Going for Gold] Gold City"
+                }
+            ]
+        },
+        {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Jun 11, 2026 (UTC)",
             "date": "10:00 p.m., Jun 11 - 9:59 p.m., Jun 22, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3098_L1781215200.png?c=20260512084153&version=1781668803203",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3098_L1781215200.png?c=20260512084153&version=1781841603158",
             "featured_uma": [
                 "[Bubblegum☆Memories] Taiki Shuttle",
                 "[Sapphire Sojourn] Mejiro Dober"
@@ -19,31 +37,13 @@
                     "name": "[Machitan☆Adventure] Matikanetannhauser"
                 }
             ]
-        },
-        {
-            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Jun 4, 2026 (UTC)",
-            "date": "10:00 p.m., Jun 4 - 9:59 p.m., Jun 14, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3096_L1780610400.png?c=20260424065835&version=1781668803203",
-            "featured_uma": [
-                "[Platanus Witch] Sweep Tosho"
-            ],
-            "featured_supports": [
-                {
-                    "rarity": "SSR",
-                    "name": "[Hands Up, Crook!] Taiki Shuttle"
-                },
-                {
-                    "rarity": "SR",
-                    "name": "[I Love You... Dear Food] Oguri Cap"
-                }
-            ]
         }
     ],
     "events": [
         {
             "title": "The story event \"Search! Solve! Summer!\" is here!\n10:00 p.m., Jun 11, 2026 (UTC)",
             "date": "10:00 p.m., Jun 11 - 9:59 p.m., Jun 22, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100030_L1781215200.png?c=20260410014031&version=1781668803203"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100030_L1781215200.png?c=20260410014031&version=1781841603158"
         },
         {
             "title": "A Legend Race is here!\n10:00 p.m., Jun 7, 2026 (UTC)",
@@ -57,12 +57,7 @@
                     "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200122_L1780869600.png?c=20260406012551"
                 }
             ]
-        },
-        {
-            "title": "Fuji Kiseki's Showtime is here!\n10:00 p.m., Jun 4, 2026 (UTC)",
-            "date": "10:00 p.m., Jun 4 - 9:59 p.m., Jun 14, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_23000001_L1780610400.png?c=20260406015021&version=1781668803203"
         }
     ],
-    "timestamp": "2026-06-17 04:01:05"
+    "timestamp": "2026-06-19 04:01:02"
 }
