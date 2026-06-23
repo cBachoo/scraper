@@ -4,7 +4,7 @@
         {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Jun 18, 2026 (UTC)",
             "date": "10:00 p.m., Jun 18 - 9:59 p.m., Jun 27, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3100_L1781820000.png?c=20260417094711&version=1782014405299",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3100_L1781820000.png?c=20260417094711&version=1782187203063",
             "featured_uma": [
                 "[unsigned] Air Shakur"
             ],
@@ -22,7 +22,7 @@
         {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Jun 11, 2026 (UTC)",
             "date": "10:00 p.m., Jun 11 - 9:59 p.m., Jun 22, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3098_L1781215200.png?c=20260512084153&version=1782014405299",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3098_L1781215200.png?c=20260512084153&version=1782187203063",
             "featured_uma": [
                 "[Bubblegum☆Memories] Taiki Shuttle",
                 "[Sapphire Sojourn] Mejiro Dober"
@@ -41,23 +41,15 @@
     ],
     "events": [
         {
-            "title": "The story event \"Search! Solve! Summer!\" is here!\n10:00 p.m., Jun 11, 2026 (UTC)",
-            "date": "10:00 p.m., Jun 11 - 9:59 p.m., Jun 22, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100030_L1781215200.png?c=20260410014031&version=1782014405299"
+            "title": "The league selection period for the Champions Meeting: Cancer Cup has begun!\n10:00 p.m., Jun 21, 2026 (UTC)",
+            "date": "10:00 p.m., Jun 24 - 9:59 p.m., Jun 30, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30300702_L1782079200.png?c=20260417095212&version=1782187203063"
         },
         {
-            "title": "A Legend Race is here!\n10:00 p.m., Jun 7, 2026 (UTC)",
-            "legend": [
-                {
-                    "date": "10:00 p.m., Jun 7 - 2:59 p.m., Jun 10, 2026 (UTC)",
-                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200121_L1780869600.png?c=20260406012551"
-                },
-                {
-                    "date": "3:00 p.m., Jun 10 - 2:59 p.m., Jun 13, 2026 (UTC)",
-                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200122_L1780869600.png?c=20260406012551"
-                }
-            ]
+            "title": "The story event \"Search! Solve! Summer!\" is here!\n10:00 p.m., Jun 11, 2026 (UTC)",
+            "date": "10:00 p.m., Jun 11 - 9:59 p.m., Jun 22, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100030_L1781215200.png?c=20260410014031&version=1782187203063"
         }
     ],
-    "timestamp": "2026-06-21 04:01:04"
+    "timestamp": "2026-06-23 04:01:02"
 }
