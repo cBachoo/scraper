@@ -2,9 +2,28 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
+            "title": "New Spotlight Scouts coming soon! Introducing a new Group-type Support Card!\n10:00 p.m., Jun 24, 2026 (UTC)",
+            "date": "10:00 p.m., Jun 25 - 9:59 p.m., Jul 4, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3102_L1782338400.png?c=20260417095925&version=1782360066462",
+            "featured_supports": [
+                {
+                    "rarity": "SSR",
+                    "name": "[Esteemed and Adored] Heirs to the Throne"
+                },
+                {
+                    "rarity": "SR",
+                    "name": "[Mud-Caked Compañero] El Condor Pasa"
+                },
+                {
+                    "rarity": "R",
+                    "name": "[Tracen Academy] Tsurumaru Tsuyoshi"
+                }
+            ]
+        },
+        {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Jun 18, 2026 (UTC)",
             "date": "10:00 p.m., Jun 18 - 9:59 p.m., Jun 27, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3100_L1781820000.png?c=20260417094711&version=1782187203063",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3100_L1781820000.png?c=20260417094711&version=1782360066462",
             "featured_uma": [
                 "[unsigned] Air Shakur"
             ],
@@ -18,38 +37,24 @@
                     "name": "[Going for Gold] Gold City"
                 }
             ]
-        },
-        {
-            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Jun 11, 2026 (UTC)",
-            "date": "10:00 p.m., Jun 11 - 9:59 p.m., Jun 22, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3098_L1781215200.png?c=20260512084153&version=1782187203063",
-            "featured_uma": [
-                "[Bubblegum☆Memories] Taiki Shuttle",
-                "[Sapphire Sojourn] Mejiro Dober"
-            ],
-            "featured_supports": [
-                {
-                    "rarity": "SSR",
-                    "name": "[Twinkle in Your Eyes ∞] El Condor Pasa"
-                },
-                {
-                    "rarity": "SSR",
-                    "name": "[Machitan☆Adventure] Matikanetannhauser"
-                }
-            ]
         }
     ],
     "events": [
         {
-            "title": "The league selection period for the Champions Meeting: Cancer Cup has begun!\n10:00 p.m., Jun 21, 2026 (UTC)",
-            "date": "10:00 p.m., Jun 24 - 9:59 p.m., Jun 30, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30300702_L1782079200.png?c=20260417095212&version=1782187203063"
+            "title": "The event \"Aim for the Stars! Dream Team\" is coming soon!\n10:00 p.m., Jun 24, 2026 (UTC)",
+            "date": "10:00 p.m., Jun 25 - 9:59 p.m., Jul 3, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30900001_L1782338400.png?c=20260419133743&version=1782360066462"
         },
         {
-            "title": "The story event \"Search! Solve! Summer!\" is here!\n10:00 p.m., Jun 11, 2026 (UTC)",
-            "date": "10:00 p.m., Jun 11 - 9:59 p.m., Jun 22, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100030_L1781215200.png?c=20260410014031&version=1782187203063"
+            "title": "The race event Champions Meeting: Cancer Cup is here!\n10:00 p.m., Jun 24, 2026 (UTC)",
+            "date": "10:00 p.m., Jun 24 - 9:59 p.m., Jun 30, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30310702_L1782338400.png?c=20260417095629&version=1782360066462"
+        },
+        {
+            "title": "The league selection period for the Champions Meeting: Cancer Cup has begun!\n10:00 p.m., Jun 21, 2026 (UTC)",
+            "date": "10:00 p.m., Jun 24 - 9:59 p.m., Jun 30, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30300702_L1782079200.png?c=20260417095212&version=1782360066462"
         }
     ],
-    "timestamp": "2026-06-23 04:01:02"
+    "timestamp": "2026-06-25 04:02:12"
 }
