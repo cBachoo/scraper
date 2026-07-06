@@ -160,7 +160,13 @@ def extract_featured_banners(lines):
             )
             continue
         if section == "uma" and (m := _UMA_RE.match(line)):
-            uma.append(m.group(1).strip())
+            name = m.group(1).strip()
+            # Unique-skill flavor text is also bulleted with a star and can
+            # follow the uma name line; it reads as a long sentence ending
+            # in a period, unlike the short "[Title] Name" format.
+            if name.endswith("."):
+                continue
+            uma.append(name)
         elif section == "support" and (m := _SUPPORT_RE.match(line)):
             supports.append({"rarity": m.group(1), "name": m.group(2).strip()})
     return uma, supports
