@@ -24,7 +24,7 @@ TIMEOUT = 10
 def setup_chrome_driver():
     """Configure and return a Chrome WebDriver instance."""
     options = webdriver.ChromeOptions()
-    options.binary_location = "/usr/bin/chromium"
+    options.binary_location = "/usr/local/bin/chrome"
     options.add_argument("--headless=new")
     options.add_argument("--disable-web-security")
     options.add_argument("--allow-running-insecure-content")
@@ -39,7 +39,7 @@ def setup_chrome_driver():
     options.add_argument("--remote-debugging-port=9222")
     options.add_argument("--window-size=1920,1080")
 
-    return webdriver.Chrome(service=Service("/usr/bin/chromedriver"), options=options)
+    return webdriver.Chrome(service=Service("/usr/local/bin/chromedriver"), options=options)
 
 
 def get_titles(driver, class_name):
