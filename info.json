@@ -2,13 +2,20 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
+            "title": "New Spotlight Pretty Derby and Spotlight Support Card Scouts coming soon!\n10:00 p.m., Jul 6, 2026 (UTC)",
+            "date": "10:00 p.m., Jul 7 - 9:59 p.m., Jul 16, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3106_L1783375200.png?c=20260518031634&version=1783436557181",
+            "featured_uma": [
+                "[Iron Ambition] Bamboo Memory"
+            ]
+        },
+        {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Jul 2, 2026 (UTC)",
             "date": "10:00 p.m., Jul 2 - 9:59 p.m., Jul 14, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3104_L1783029600.png?c=20260518030401&version=1783224004918",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3104_L1783029600.png?c=20260518030401&version=1783436557181",
             "featured_uma": [
                 "[Fair Lady of the Waves] Mejiro McQueen",
-                "[RUN! RUIN! LAUNCHER!] Gold Ship",
-                "[RUN! RUIN! LAUNCHER!] Gold Ship's Unique Skill, \"564 Escapades,\" selects two rare skills at random from among those she currently possesses and activates them regardless of any activation conditions."
+                "[RUN! RUIN! LAUNCHER!] Gold Ship"
             ],
             "featured_supports": [
                 {
@@ -26,8 +33,8 @@
         {
             "title": "The story event \"Make a Splash! Summer Showdown! ☆\" is here!\n10:00 p.m., Jul 2, 2026 (UTC)",
             "date": "10:00 p.m., Jul 2 - 9:59 p.m., Jul 14, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100032_L1783029600.png?c=20260518025536&version=1783224004918"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100032_L1783029600.png?c=20260518025536&version=1783436557181"
         }
     ],
-    "timestamp": "2026-07-05 04:00:56"
+    "timestamp": "2026-07-07 15:03:28"
 }
