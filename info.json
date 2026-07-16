@@ -2,20 +2,35 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
-            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Jul 7, 2026 (UTC)",
-            "date": "10:00 p.m., Jul 7 - 9:59 p.m., Jul 16, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3106_L1783461600.png?c=20260518034015&version=1784088068745",
+            "title": "New Spotlight Pretty Derby and Spotlight Support Card Scouts coming soon!\n10:00 p.m., Jul 15, 2026 (UTC)",
+            "date": "10:00 p.m., Jul 16 - 9:59 p.m., Jul 26, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3108_L1784152800.png?c=20260525063128&version=1784237814463",
             "featured_uma": [
-                "[Iron Ambition] Bamboo Memory"
+                "[Eightfold☆Fortune] Copano Rickey"
+            ],
+            "featured_supports": [
+                {
+                    "rarity": "SSR",
+                    "name": "[It's on the House] Manhattan Cafe"
+                },
+                {
+                    "rarity": "SR",
+                    "name": "[Bobbing with the Waves] Seiun Sky"
+                }
             ]
         }
     ],
     "events": [
         {
+            "title": "The race event Champions Meeting: Leo Cup is here!\n10:00 p.m., Jul 15, 2026 (UTC)",
+            "date": "10:00 p.m., Jul 15 - 9:59 p.m., Jul 21, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30310802_L1784152800.png?c=20260602085907&version=1784237814463"
+        },
+        {
             "title": "The league selection period for the Champions Meeting: Leo Cup has begun!\n10:00 p.m., Jul 12, 2026 (UTC)",
             "date": "10:00 p.m., Jul 15 - 9:59 p.m., Jul 21, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30300802_L1783893600.png?c=20260602085834&version=1784088068745"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30300802_L1783893600.png?c=20260602085834&version=1784237814463"
         }
     ],
-    "timestamp": "2026-07-15 04:01:46"
+    "timestamp": "2026-07-16 21:37:39"
 }
