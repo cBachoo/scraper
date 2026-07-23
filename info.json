@@ -2,9 +2,9 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
-            "title": "New Career Scenario Celebration Pretty Derby and Support Card Scouts coming soon!\n10:00 p.m., Jul 21, 2026 (UTC)",
+            "title": "New Career Scenario Celebration Pretty Derby and Support Card Scouts out now!\n10:00 p.m., Jul 22, 2026 (UTC)",
             "date": "10:00 p.m., Jul 22 - 9:59 p.m., Aug 10, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3110_L1784671200.png?c=20260626034638&version=1784752714906",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3110_L1784757600.png?c=20260626034606&version=1784779203615",
             "featured_uma": [
                 "[Twilight Triumph] Smart Falcon"
             ],
@@ -22,8 +22,13 @@
                     "name": "[Event Producer] Light Hello"
                 }
             ]
+        },
+        {
+            "title": "3★ Guaranteed and SSR Guaranteed 1.5-Year Anniversary Scouts now available!\n10:00 p.m., Jul 22, 2026 (UTC)",
+            "date": "10:00 p.m., Jul 22 - 9:59 p.m., Aug 27, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_5009_L1784757600.png?c=20260522062103&version=1784779203615"
         }
     ],
     "events": [],
-    "timestamp": "2026-07-22 20:38:58"
+    "timestamp": "2026-07-23 04:00:55"
 }
