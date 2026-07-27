@@ -2,9 +2,28 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
+            "title": "New Spotlight Pretty Derby and Spotlight Support Card Scouts coming soon!\n10:00 p.m., Jul 26, 2026 (UTC)",
+            "date": "10:00 p.m., Jul 27 - 9:59 p.m., Aug 10, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3112_L1785103200.png?c=20260714080021&version=1785124803248",
+            "featured_uma": [
+                "[Dream Deliverer] Winning Ticket",
+                "[Difference Engineer] Narita Taishin"
+            ],
+            "featured_supports": [
+                {
+                    "rarity": "SSR",
+                    "name": "[Teio-Oo-Oo!!!] Tokai Teio"
+                },
+                {
+                    "rarity": "SSR",
+                    "name": "[TT Ignition!] Twin Turbo"
+                }
+            ]
+        },
+        {
             "title": "New Career Scenario Celebration Pretty Derby and Support Card Scouts out now!\n10:00 p.m., Jul 22, 2026 (UTC)",
             "date": "10:00 p.m., Jul 22 - 9:59 p.m., Aug 10, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3110_L1784757600.png?c=20260626034606&version=1784952002770",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3110_L1784757600.png?c=20260626034606&version=1785124803248",
             "featured_uma": [
                 "[Twilight Triumph] Smart Falcon"
             ],
@@ -26,9 +45,9 @@
         {
             "title": "3★ Guaranteed and SSR Guaranteed 1.5-Year Anniversary Scouts now available!\n10:00 p.m., Jul 22, 2026 (UTC)",
             "date": "10:00 p.m., Jul 22 - 9:59 p.m., Aug 27, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_5009_L1784757600.png?c=20260522062103&version=1784952002770"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_5009_L1784757600.png?c=20260522062103&version=1785124803248"
         }
     ],
     "events": [],
-    "timestamp": "2026-07-25 04:00:58"
+    "timestamp": "2026-07-27 04:01:02"
 }
