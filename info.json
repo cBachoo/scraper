@@ -2,9 +2,9 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
-            "title": "New Spotlight Pretty Derby and Spotlight Support Card Scouts coming soon!\n10:00 p.m., Aug 4, 2026 (UTC)",
+            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Aug 5, 2026 (UTC)",
             "date": "10:00 p.m., Aug 5 - 9:59 p.m., Aug 13, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3114_L1785880800.png?c=20260528090942&version=1785902466046",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3114_L1785967200.png?c=20260601092805&version=1786075203833",
             "featured_uma": [
                 "[Darl'n Snowflake] Yukino Bijin"
             ]
@@ -12,7 +12,7 @@
         {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Jul 27, 2026 (UTC)",
             "date": "10:00 p.m., Jul 27 - 9:59 p.m., Aug 10, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3112_L1785189600.png?c=20260623080106&version=1785902466046",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3112_L1785189600.png?c=20260623080106&version=1786075203833",
             "featured_uma": [
                 "[Dream Deliverer] Winning Ticket",
                 "[Difference Engineer] Narita Taishin"
@@ -27,41 +27,19 @@
                     "name": "[TT Ignition!] Twin Turbo"
                 }
             ]
-        },
-        {
-            "title": "New Career Scenario Celebration Pretty Derby and Support Card Scouts out now!\n10:00 p.m., Jul 22, 2026 (UTC)",
-            "date": "10:00 p.m., Jul 22 - 9:59 p.m., Aug 10, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3110_L1784757600.png?c=20260626034606&version=1785902466046",
-            "featured_uma": [
-                "[Twilight Triumph] Smart Falcon"
-            ],
-            "featured_supports": [
-                {
-                    "rarity": "SSR",
-                    "name": "[From the Ground Up] Light Hello"
-                },
-                {
-                    "rarity": "SSR",
-                    "name": "[Q≠0] Agnes Tachyon"
-                },
-                {
-                    "rarity": "R",
-                    "name": "[Event Producer] Light Hello"
-                }
-            ]
-        },
-        {
-            "title": "3★ Guaranteed and SSR Guaranteed 1.5-Year Anniversary Scouts now available!\n10:00 p.m., Jul 22, 2026 (UTC)",
-            "date": "10:00 p.m., Jul 22 - 9:59 p.m., Aug 27, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_5009_L1784757600.png?c=20260522062103&version=1785902466046"
         }
     ],
     "events": [
         {
+            "title": "The league selection period for the Champions Meeting: Virgo Cup has begun!\n10:00 p.m., Aug 5, 2026 (UTC)",
+            "date": "10:00 p.m., Aug 8 - 9:59 p.m., Aug 14, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30300902_L1785967200.png?c=20260616082640&version=1786075203833"
+        },
+        {
             "title": "The story event \"Wings of Steam and Steel\" is here!\n10:00 p.m., Jul 27, 2026 (UTC)",
             "date": "10:00 p.m., Jul 27 - 9:59 p.m., Aug 10, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100032_L1785189600.png?c=20260623080016&version=1785902466046"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100032_L1785189600.png?c=20260623080016&version=1786075203833"
         }
     ],
-    "timestamp": "2026-08-05 04:02:04"
+    "timestamp": "2026-08-07 04:00:55"
 }
