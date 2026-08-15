@@ -4,7 +4,7 @@
         {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Aug 12, 2026 (UTC)",
             "date": "10:00 p.m., Aug 12 - 9:59 p.m., Aug 21, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3116_new_L1786572000.png?c=20260714012131&version=1786593603014",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3116_new_L1786572000.png?c=20260714012131&version=1786766467873",
             "featured_uma": [
                 "[Rocket☆Star] Seeking the Pearl"
             ],
@@ -30,33 +30,28 @@
     ],
     "events": [
         {
-            "title": "The event \"Trainer Aptitude Test\" is here!\n10:00 p.m., Aug 12, 2026 (UTC)",
-            "date": "10:00 p.m., Aug 12 - 9:59 p.m., Aug 21, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30600002_L1786572000.png?c=20260807074719&version=1786593603014"
-        },
-        {
-            "title": "The event \"Trainer Aptitude Test\" is coming soon!\n10:00 p.m., Aug 11, 2026 (UTC)",
-            "date": "10:00 p.m., Aug 12 - 9:59 p.m., Aug 21, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30600001_L1786485600.png?c=20260601095513&version=1786593603014"
-        },
-        {
-            "title": "A Legend Race is coming soon!\n10:00 p.m., Aug 9, 2026 (UTC)",
+            "title": "A Legend Race is here!\n10:00 p.m., Aug 13, 2026 (UTC)",
             "legend": [
                 {
                     "date": "10:00 p.m., Aug 13 - 2:59 p.m., Aug 16, 2026 (UTC)",
-                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200131_L1786312800.png?c=20260601095209"
+                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200131_L1786658400.png?c=20260615015401"
                 },
                 {
                     "date": "3:00 p.m., Aug 16 - 2:59 p.m., Aug 19, 2026 (UTC)",
-                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200132_L1786312800.png?c=20260601095209"
+                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200132_L1786658400.png?c=20260615015401"
                 }
             ]
         },
         {
-            "title": "The race event Champions Meeting: Virgo Cup is here!\n10:00 p.m., Aug 8, 2026 (UTC)",
-            "date": "10:00 p.m., Aug 8 - 9:59 p.m., Aug 14, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30310902_L1786226400.png?c=20260616082723&version=1786593603014"
+            "title": "The event \"Trainer Aptitude Test\" is here!\n10:00 p.m., Aug 12, 2026 (UTC)",
+            "date": "10:00 p.m., Aug 12 - 9:59 p.m., Aug 21, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30600002_L1786572000.png?c=20260807074719&version=1786766467873"
+        },
+        {
+            "title": "The event \"Trainer Aptitude Test\" is coming soon!\n10:00 p.m., Aug 11, 2026 (UTC)",
+            "date": "10:00 p.m., Aug 12 - 9:59 p.m., Aug 21, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30600001_L1786485600.png?c=20260601095513&version=1786766467873"
         }
     ],
-    "timestamp": "2026-08-13 04:01:09"
+    "timestamp": "2026-08-15 04:02:06"
 }
