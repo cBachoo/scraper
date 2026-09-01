@@ -2,9 +2,35 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
+            "title": "New Spotlight Pretty Derby and Spotlight Support Card Scouts coming soon!\n10:00 p.m., Aug 31, 2026 (UTC)",
+            "date": "10:00 p.m., Sep 1 - 9:59 p.m., Sep 10, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3122_new_L1788213600.png?c=20260625075229&version=1788235281789",
+            "featured_uma": [
+                "[Fluttertail Spirit] Yamanin Zephyr"
+            ],
+            "featured_supports": [
+                {
+                    "rarity": "SSR",
+                    "name": "[A Win Foreshadowed] Symboli Kris S"
+                },
+                {
+                    "rarity": "SR",
+                    "name": "[Go, Go! Tsuyoshi!] Tsurumaru Tsuyoshi"
+                },
+                {
+                    "rarity": "R",
+                    "name": "[Tracen Academy] Symboli Kris S"
+                },
+                {
+                    "rarity": "R",
+                    "name": "[Tracen Academy] Tanino Gimlet"
+                }
+            ]
+        },
+        {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Aug 25, 2026 (UTC)",
             "date": "10:00 p.m., Aug 25 - 9:59 p.m., Sep 2, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3120_L1787695200.png?c=20260624084530&version=1788148803457",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3120_L1787695200.png?c=20260624084530&version=1788235281789",
             "featured_uma": [
                 "[Flare] Aston Machan"
             ]
@@ -12,15 +38,23 @@
     ],
     "events": [
         {
-            "title": "The race event Champions Meeting: Libra Cup is here!\n10:00 p.m., Aug 28, 2026 (UTC)",
-            "date": "10:00 p.m., Aug 28 - 9:59 p.m., Sep 3, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30311002_L1787954400.png?c=20260721081925&version=1788148803457"
+            "title": "A Legend Race is coming soon!\n10:00 p.m., Aug 31, 2026 (UTC)",
+            "legend": [
+                {
+                    "date": "10:00 p.m., Sep 3 - 2:59 p.m., Sep 6, 2026 (UTC)",
+                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200142_L1788213600.png?c=20260625080227"
+                },
+                {
+                    "date": "3:00 p.m., Sep 6 - 2:59 p.m., Sep 9, 2026 (UTC)",
+                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200141_L1788213600.png?c=20260625080227"
+                }
+            ]
         },
         {
-            "title": "The league selection period for the Champions Meeting: Libra Cup has begun!\n10:00 p.m., Aug 25, 2026 (UTC)",
+            "title": "The race event Champions Meeting: Libra Cup is here!\n10:00 p.m., Aug 28, 2026 (UTC)",
             "date": "10:00 p.m., Aug 28 - 9:59 p.m., Sep 3, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30301002_991_L1787695200.png?c=20260821073728&version=1788148803457"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30311002_L1787954400.png?c=20260721081925&version=1788235281789"
         }
     ],
-    "timestamp": "2026-08-31 04:00:55"
+    "timestamp": "2026-09-01 04:02:13"
 }
