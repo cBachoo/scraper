@@ -2,9 +2,9 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
-            "title": "New Spotlight Pretty Derby and Spotlight Support Card Scouts coming soon!\n10:00 p.m., Aug 31, 2026 (UTC)",
+            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Sep 1, 2026 (UTC)",
             "date": "10:00 p.m., Sep 1 - 9:59 p.m., Sep 10, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3122_new_L1788213600.png?c=20260625075229&version=1788235281789",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3122_new_L1788300000.png?c=20260717023144&version=1788408004734",
             "featured_uma": [
                 "[Fluttertail Spirit] Yamanin Zephyr"
             ],
@@ -26,14 +26,6 @@
                     "name": "[Tracen Academy] Tanino Gimlet"
                 }
             ]
-        },
-        {
-            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Aug 25, 2026 (UTC)",
-            "date": "10:00 p.m., Aug 25 - 9:59 p.m., Sep 2, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3120_L1787695200.png?c=20260624084530&version=1788235281789",
-            "featured_uma": [
-                "[Flare] Aston Machan"
-            ]
         }
     ],
     "events": [
@@ -49,12 +41,7 @@
                     "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200141_L1788213600.png?c=20260625080227"
                 }
             ]
-        },
-        {
-            "title": "The race event Champions Meeting: Libra Cup is here!\n10:00 p.m., Aug 28, 2026 (UTC)",
-            "date": "10:00 p.m., Aug 28 - 9:59 p.m., Sep 3, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30311002_L1787954400.png?c=20260721081925&version=1788235281789"
         }
     ],
-    "timestamp": "2026-09-01 04:02:13"
+    "timestamp": "2026-09-03 04:00:49"
 }
