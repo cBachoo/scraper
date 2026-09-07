@@ -2,9 +2,28 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
+            "title": "New Spotlight Pretty Derby and Spotlight Support Card Scouts coming soon!\n10:00 p.m., Sep 6, 2026 (UTC)",
+            "date": "10:00 p.m., Sep 7 - 9:59 p.m., Sep 19, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3124_L1788732000.png?c=20260717025237&version=1788753603576",
+            "featured_uma": [
+                "[Raging Thunder] Tamamo Cross",
+                "[Golden Dream] Inari One"
+            ],
+            "featured_supports": [
+                {
+                    "rarity": "SSR",
+                    "name": "[Run Forth! Dash On! Ever Forward!] Oguri Cap"
+                },
+                {
+                    "rarity": "SSR",
+                    "name": "[Pious Flame, Heavens Scorcher] Yaeno Muteki"
+                }
+            ]
+        },
+        {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Sep 1, 2026 (UTC)",
             "date": "10:00 p.m., Sep 1 - 9:59 p.m., Sep 10, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3122_new_L1788300000.png?c=20260717023144&version=1788580802881",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3122_new_L1788300000.png?c=20260717023144&version=1788753603576",
             "featured_uma": [
                 "[Fluttertail Spirit] Yamanin Zephyr"
             ],
@@ -43,5 +62,5 @@
             ]
         }
     ],
-    "timestamp": "2026-09-05 04:00:54"
+    "timestamp": "2026-09-07 04:00:55"
 }
