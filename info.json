@@ -2,9 +2,9 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
-            "title": "New Spotlight Pretty Derby and Spotlight Support Card Scouts coming soon!\n10:00 p.m., Sep 6, 2026 (UTC)",
+            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Sep 7, 2026 (UTC)",
             "date": "10:00 p.m., Sep 7 - 9:59 p.m., Sep 19, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3124_L1788732000.png?c=20260717025237&version=1788753603576",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3124_L1788818400.png?c=20260903064813&version=1788926473698",
             "featured_uma": [
                 "[Raging Thunder] Tamamo Cross",
                 "[Golden Dream] Inari One"
@@ -23,7 +23,7 @@
         {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Sep 1, 2026 (UTC)",
             "date": "10:00 p.m., Sep 1 - 9:59 p.m., Sep 10, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3122_new_L1788300000.png?c=20260717023144&version=1788753603576",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3122_new_L1788300000.png?c=20260717023144&version=1788926473698",
             "featured_uma": [
                 "[Fluttertail Spirit] Yamanin Zephyr"
             ],
@@ -49,6 +49,11 @@
     ],
     "events": [
         {
+            "title": "The story event \"Hark Back, Run Forward\" is here!\n10:00 p.m., Sep 7, 2026 (UTC)",
+            "date": "10:00 p.m., Sep 7 - 9:59 p.m., Sep 19, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100036_L1788818400.png?c=20260724011200&version=1788926473698"
+        },
+        {
             "title": "A Legend Race is here!\n10:00 p.m., Sep 3, 2026 (UTC)",
             "legend": [
                 {
@@ -62,5 +67,5 @@
             ]
         }
     ],
-    "timestamp": "2026-09-07 04:00:55"
+    "timestamp": "2026-09-09 04:02:13"
 }
