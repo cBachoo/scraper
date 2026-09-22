@@ -16,47 +16,52 @@ DOCKER_COMPOSE="/usr/bin/docker compose"   # confirm this with `which docker` wh
 
 # ==========================================
 
-echo "=== START $(date '+%Y-%m-%d %H:%M:%S') ===" >> "$LOG_FILE"
+# Send ALL output (stdout + stderr) to BOTH the terminal and the log file.
+# `tee -a` appends, matching the original per-line logging behaviour, so a
+# manual run is now visible live while still being recorded for cron.
+exec > >(tee -a "$LOG_FILE") 2>&1
+
+echo "=== START $(date '+%Y-%m-%d %H:%M:%S') ==="
 
 # Go to project directory (very important in cron!)
-cd "$PROJECT_DIR" || { echo "ERROR: Cannot cd to $PROJECT_DIR" >> "$LOG_FILE"; exit 1; }
+cd "$PROJECT_DIR" || { echo "ERROR: Cannot cd to $PROJECT_DIR"; exit 1; }
 
 # Force correct SSH key for git (no agent in cron!)
 export GIT_SSH_COMMAND="ssh -i $SSH_KEY -o IdentitiesOnly=yes -o StrictHostKeyChecking=no"
 
 # 1. Run scraper (rebuild if needed, wait for completion)
-echo "[$(date '+%H:%M:%S')] Running docker compose run --build scraper..." >> "$LOG_FILE"
-$DOCKER_COMPOSE run --build scraper >> "$LOG_FILE" 2>&1 || {
-    echo "[$(date '+%H:%M:%S')] ERROR: docker compose run failed - check above output" >> "$LOG_FILE"
+echo "[$(date '+%H:%M:%S')] Running docker compose run --build scraper..."
+$DOCKER_COMPOSE run --build scraper || {
+    echo "[$(date '+%H:%M:%S')] ERROR: docker compose run failed - check above output"
     # Optional: exit 1  ← uncomment if you want to stop on docker failure
 }
 
 # 2. Git operations - only commit if there are actual changes
-echo "[$(date '+%H:%M:%S')] Checking for changes..." >> "$LOG_FILE"
-/usr/bin/git status --porcelain >> "$LOG_FILE" 2>&1
+echo "[$(date '+%H:%M:%S')] Checking for changes..."
+/usr/bin/git status --porcelain
 
 CHANGES=$(git status --porcelain | grep -c '^' || true)
 
 if [ "$CHANGES" -eq 0 ]; then
-    echo "[$(date '+%H:%M:%S')] No changes detected → skipping commit & push" >> "$LOG_FILE"
+    echo "[$(date '+%H:%M:%S')] No changes detected → skipping commit & push"
 else
-    echo "[$(date '+%H:%M:%S')] $CHANGES change(s) found → committing & pushing" >> "$LOG_FILE"
+    echo "[$(date '+%H:%M:%S')] $CHANGES change(s) found → committing & pushing"
 
-    /usr/bin/git add . >> "$LOG_FILE" 2>&1 || true
+    /usr/bin/git add . || true
 
     # Commit without GPG (prevents hanging)
-    /usr/bin/git commit --no-gpg-sign -m "$GIT_COMMIT_MSG" >> "$LOG_FILE" 2>&1 || {
-        echo "Commit skipped (nothing new after add?)" >> "$LOG_FILE"
+    /usr/bin/git commit --no-gpg-sign -m "$GIT_COMMIT_MSG" || {
+        echo "Commit skipped (nothing new after add?)"
     }
 
     # Push
-    /usr/bin/git push origin "$GIT_BRANCH" >> "$LOG_FILE" 2>&1 || {
-        echo "ERROR: git push failed - check SSH key / permissions / network" >> "$LOG_FILE"
+    /usr/bin/git push origin "$GIT_BRANCH" || {
+        echo "ERROR: git push failed - check SSH key / permissions / network"
         exit 1
     }
 
-    echo "[$(date '+%H:%M:%S')] Successfully pushed to $GIT_BRANCH" >> "$LOG_FILE"
+    echo "[$(date '+%H:%M:%S')] Successfully pushed to $GIT_BRANCH"
 fi
 
-echo "=== END $(date '+%Y-%m-%d %H:%M:%S') ===" >> "$LOG_FILE"
-echo "" >> "$LOG_FILE"
+echo "=== END $(date '+%Y-%m-%d %H:%M:%S') ==="
+echo ""
