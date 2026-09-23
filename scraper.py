@@ -68,9 +68,21 @@ def get_page_text_and_images(driver):
     return lines, images
 
 
+# A date range joins its start and end times with a hyphen, en dash, or em dash,
+# and the site is inconsistent about surrounding spaces (e.g. "Sep 15 - 9:59" vs
+# "Sep 23–9:59"). Match a dash only when it sits between two digits so stray
+# hyphens elsewhere in the line don't count as a range.
+_RANGE_DASH_RE = re.compile(r"\d\s*[-–—]\s*\d")
+
+
 def extract_dates(lines):
-    """Extract dates with time ranges containing (UTC) and dash."""
-    return [line.strip() for line in lines if "(UTC)" in line and " - " in line]
+    """Extract date-range lines: a (UTC) line whose start/end times are joined by
+    a hyphen, en dash, or em dash, with or without surrounding spaces."""
+    return [
+        line.strip()
+        for line in lines
+        if "(UTC)" in line and _RANGE_DASH_RE.search(line)
+    ]
 
 
 def create_legend_pairs(dates_list, all_images):
