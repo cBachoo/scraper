@@ -181,6 +181,17 @@ def extract_standard_data(driver, title):
     lines, images = get_page_text_and_images(driver)
     dates = extract_dates(lines)
 
+    # Announcement-style events ("... is here!", "... has ended!", "... has
+    # begun!") carry a single point-in-time date instead of a start-end range,
+    # which extract_dates() intentionally skips. Without a fallback these items
+    # get an empty date and are dropped entirely, so recover the date from any
+    # (UTC) line on the page, and finally from the date embedded in the list
+    # title as a last resort.
+    if not dates:
+        dates = [line.strip() for line in lines if "(UTC)" in line]
+    if not dates:
+        dates = [line.strip() for line in title.split("\n") if "(UTC)" in line]
+
     date = dates[0].strip() if dates else ""
     image = images[0] if images else ""
 
@@ -239,6 +250,10 @@ def scrape_items_by_clicking(driver, base_url, titles, item_type):
             data = click_and_extract(driver, base_url, title, item_type)
             if data:
                 scraped.append(data)
+            else:
+                # Titles carry an embedded date on a second line; log only the
+                # first line so the drop reason is readable at a glance.
+                print(f"  Dropped {item_type} (no date found): {title.splitlines()[0]}")
         except Exception as e:
             print(f"Error processing {title}: {e}")
             continue
