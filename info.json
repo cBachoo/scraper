@@ -2,48 +2,25 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
-            "title": "New Spotlight Pretty Derby and Spotlight Support Card Scouts coming soon!\n10:00 p.m., Oct 6, 2026 (UTC)",
+            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Oct 7, 2026 (UTC)",
             "date": "10:00 p.m., Oct 7–9:59 p.m., Oct 15, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3134_L1791324000.png?c=20260831074623&version=1791345675605",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3134_L1791410400.png?c=20260904083346&version=1791518403698",
             "featured_uma": [
                 "[Heroic Author] Zenno Rob Roy"
-            ]
-        },
-        {
-            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Sep 28, 2026 (UTC)",
-            "date": "10:00 p.m., Sep 28–9:59 p.m., Oct 12, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3132_L1790632800.png?c=20260831074213&version=1791345675605",
-            "featured_uma": [
-                "[Fiery Aqua Vitae] Vodka",
-                "[Nuit Étoilée de Scarlet] Daiwa Scarlet"
-            ],
-            "featured_supports": [
-                {
-                    "rarity": "SSR",
-                    "name": "[Glad Tidings] Narita Brian"
-                },
-                {
-                    "rarity": "SSR",
-                    "name": "[Are You Merry?] Air Groove"
-                },
-                {
-                    "rarity": "R",
-                    "name": "[Tracen Academy] Sakura Laurel"
-                }
             ]
         }
     ],
     "events": [
         {
+            "title": "The league selection period for the Champions Meeting: Sagittarius Cup has begun!\n10:00 p.m., Oct 7, 2026 (UTC)",
+            "date": "10:00 p.m., Oct 10–9:59 p.m., Oct 16, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30301202_L1791410400.png?c=20260909085841&version=1791518403698"
+        },
+        {
             "title": "The event Aim for the Stars! Dream Team has ended!\n10:00 p.m., Oct 4, 2026 (UTC)",
             "date": "10:00 p.m., Oct 4, 2026 (UTC)",
             "image": ""
-        },
-        {
-            "title": "The story event Illuminate the Heart is here!\n10:00 p.m., Sep 28, 2026 (UTC)",
-            "date": "10:00 p.m., Sep 28–9:59 p.m., Oct 12, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100038_L1790632800.png?c=20260831074438&version=1791345675605"
         }
     ],
-    "timestamp": "2026-10-07 04:02:00"
+    "timestamp": "2026-10-09 04:00:48"
 }
