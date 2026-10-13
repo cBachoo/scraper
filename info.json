@@ -4,7 +4,7 @@
         {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Oct 7, 2026 (UTC)",
             "date": "10:00 p.m., Oct 7–9:59 p.m., Oct 15, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3134_L1791410400.png?c=20260904083346&version=1791691203814",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3134_L1791410400.png?c=20260904083346&version=1791864003301",
             "featured_uma": [
                 "[Heroic Author] Zenno Rob Roy"
             ]
@@ -12,14 +12,19 @@
     ],
     "events": [
         {
+            "title": "The story event Illuminate the Heart has ended!\n10:00 p.m., Oct 12, 2026 (UTC)",
+            "date": "10:00 p.m., Oct 12, 2026 (UTC)",
+            "image": ""
+        },
+        {
             "title": "The race event Champions Meeting: Sagittarius Cup is here!\n10:00 p.m., Oct 10, 2026 (UTC)",
             "date": "10:00 p.m., Oct 10–9:59 p.m., Oct 16, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30311202_L1791669600.png?c=20260909085908&version=1791691203814"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30311202_L1791669600.png?c=20260909085908&version=1791864003301"
         },
         {
             "title": "The league selection period for the Champions Meeting: Sagittarius Cup has begun!\n10:00 p.m., Oct 7, 2026 (UTC)",
             "date": "10:00 p.m., Oct 10–9:59 p.m., Oct 16, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30301202_L1791410400.png?c=20260909085841&version=1791691203814"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30301202_L1791410400.png?c=20260909085841&version=1791864003301"
         },
         {
             "title": "The event Aim for the Stars! Dream Team has ended!\n10:00 p.m., Oct 4, 2026 (UTC)",
@@ -27,5 +32,5 @@
             "image": ""
         }
     ],
-    "timestamp": "2026-10-11 04:00:55"
+    "timestamp": "2026-10-13 04:01:02"
 }
