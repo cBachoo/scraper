@@ -124,13 +124,41 @@ def is_coming_soon(item):
     return "coming" in item.get("title", "").lower()
 
 
+# A Champions Meeting generates two separate posts for the same cup: the race
+# event ("... is here!") and its league-selection companion ("league selection
+# period for ... has begun!"). They have different banner IDs, so the banner
+# dedup below can't pair them; match them by cup name instead.
+_CM_CUP_RE = re.compile(r"Champions Meeting:\s*(.+?Cup)", re.IGNORECASE)
+
+
+def champions_meeting_cup(item):
+    """Return the Champions Meeting cup name in a title (e.g. 'sagittarius cup'),
+    normalised to lower case, or None if the title isn't a Champions Meeting post."""
+    match = _CM_CUP_RE.search(item.get("title", ""))
+    return match.group(1).strip().lower() if match else None
+
+
+def is_league_selection(item):
+    """Return True for the 'league selection period ...' companion post."""
+    return "league selection" in item.get("title", "").lower()
+
+
 def deduplicate_items(items):
-    """Remove 'coming soon' entries when a live version of the same banner exists."""
-    # Collect banner IDs that already have a live (non-coming, e.g. "here") entry
+    """Remove redundant entries:
+    - 'coming soon' posts when a live version of the same banner exists, and
+    - the 'league selection period' post when the matching Champions Meeting
+      race event (same cup) is also present.
+    """
+    # Collect banner IDs that already have a live (non-coming, e.g. "here") entry,
+    # and the cups that have a primary (non-league-selection) Champions Meeting post.
     live_banners = set()
+    cup_race_events = set()
     for item in items:
         if not is_coming_soon(item):
             live_banners.update(get_item_banner_ids(item))
+        cup = champions_meeting_cup(item)
+        if cup and not is_league_selection(item):
+            cup_race_events.add(cup)
 
     result = []
     for item in items:
@@ -141,6 +169,13 @@ def deduplicate_items(items):
                     f"  Skipping duplicate (banners {sorted(banner_ids)}): "
                     f"{item['title'][:60]}"
                 )
+                continue
+        # Drop the league-selection post only when its race event is also present,
+        # so a standalone selection announcement isn't lost.
+        if is_league_selection(item):
+            cup = champions_meeting_cup(item)
+            if cup and cup in cup_race_events:
+                print(f"  Skipping league-selection duplicate ({cup}): {item['title'][:60]}")
                 continue
         result.append(item)
     return result
