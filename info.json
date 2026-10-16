@@ -4,7 +4,7 @@
         {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Oct 14, 2026 (UTC)",
             "date": "10:00 p.m., Oct 14–9:59 p.m., Oct 23, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3136_new2_L1792015200.png?c=20260916092316&version=1792036803581",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3136_new2_L1792015200.png?c=20260916092316&version=1792110323604",
             "featured_uma": [
                 "[Ravenous Wolf] Narita Brian"
             ],
@@ -22,17 +22,14 @@
                     "name": "[Tracen Academy] Yamanin Zephyr"
                 }
             ]
-        },
-        {
-            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Oct 7, 2026 (UTC)",
-            "date": "10:00 p.m., Oct 7–9:59 p.m., Oct 15, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3134_L1791410400.png?c=20260904083346&version=1792036803581",
-            "featured_uma": [
-                "[Heroic Author] Zenno Rob Roy"
-            ]
         }
     ],
     "events": [
+        {
+            "title": "The Sparkly Magic Show collaboration event is here!\n10:00 p.m., Oct 15, 2026 (UTC)",
+            "date": "10:00 p.m., Oct 15–9:59 p.m., Oct 18, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_31100001_L1792101600.png?c=20261007060624&version=1792110323604"
+        },
         {
             "title": "The story event Illuminate the Heart has ended!\n10:00 p.m., Oct 12, 2026 (UTC)",
             "date": "10:00 p.m., Oct 12, 2026 (UTC)",
@@ -41,8 +38,8 @@
         {
             "title": "The race event Champions Meeting: Sagittarius Cup is here!\n10:00 p.m., Oct 10, 2026 (UTC)",
             "date": "10:00 p.m., Oct 10–9:59 p.m., Oct 16, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30311202_L1791669600.png?c=20260909085908&version=1792036803581"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30311202_L1791669600.png?c=20260909085908&version=1792110323604"
         }
     ],
-    "timestamp": "2026-10-15 04:01:03"
+    "timestamp": "2026-10-16 00:26:15"
 }
