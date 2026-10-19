@@ -4,7 +4,7 @@
         {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Oct 14, 2026 (UTC)",
             "date": "10:00 p.m., Oct 14–9:59 p.m., Oct 23, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3136_new2_L1792015200.png?c=20260916092316&version=1792209603997",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3136_new2_L1792015200.png?c=20260916092316&version=1792382403138",
             "featured_uma": [
                 "[Ravenous Wolf] Narita Brian"
             ],
@@ -26,6 +26,16 @@
     ],
     "events": [
         {
+            "title": "The collab event Sparkly Magic Show has ended!\n10:00 p.m., Oct 18, 2026 (UTC)",
+            "date": "10:00 p.m., Oct 18–3:59 a.m., Oct 19, 2026 (UTC)",
+            "image": ""
+        },
+        {
+            "title": "The race event Champions Meeting: Capricorn Cup is coming in late October!\n10:00 p.m., Oct 17, 2026 (UTC)",
+            "date": "10:00 p.m., Oct 17, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30320102_L1792274400.png?c=20260925025730&version=1792382403138"
+        },
+        {
             "title": "A Legend Race is coming soon!\n10:00 p.m., Oct 16, 2026 (UTC)",
             "legend": [
                 {
@@ -41,13 +51,8 @@
         {
             "title": "The Sparkly Magic Show collaboration event is here!\n10:00 p.m., Oct 15, 2026 (UTC)",
             "date": "10:00 p.m., Oct 15–9:59 p.m., Oct 18, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_31100001_L1792101600.png?c=20261007060624&version=1792209603997"
-        },
-        {
-            "title": "The story event Illuminate the Heart has ended!\n10:00 p.m., Oct 12, 2026 (UTC)",
-            "date": "10:00 p.m., Oct 12, 2026 (UTC)",
-            "image": ""
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_31100001_L1792101600.png?c=20261007060624&version=1792382403138"
         }
     ],
-    "timestamp": "2026-10-17 04:00:55"
+    "timestamp": "2026-10-19 04:01:02"
 }
