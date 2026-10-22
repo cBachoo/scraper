@@ -1,8 +1,19 @@
 #!/bin/bash
 # Purpose: Every x days: rebuild docker compose → git add info.json → commit & push if changed
 # Runs as root - assumes SSH key is set up for passwordless git push
+# Usage: cronners.sh [--dry-run]   (or DRY_RUN=1 cronners.sh)
+#   --dry-run: still builds & runs the scraper, but only shows what git would
+#              commit/push instead of doing it
 
 set -euo pipefail
+
+DRY_RUN="${DRY_RUN:-0}"
+for arg in "$@"; do
+    case "$arg" in
+        -n|--dry-run) DRY_RUN=1 ;;
+        *) echo "Unknown argument: $arg (usage: $0 [--dry-run])"; exit 2 ;;
+    esac
+done
 
 # ================= CONFIG =================
 PROJECT_DIR="/root/scraper"
@@ -22,6 +33,7 @@ DOCKER_COMPOSE="/usr/bin/docker compose"   # confirm this with `which docker` wh
 exec > >(tee -a "$LOG_FILE") 2>&1
 
 echo "=== START $(date '+%Y-%m-%d %H:%M:%S') ==="
+[ "$DRY_RUN" = "1" ] && echo "*** DRY RUN: no git add/commit/push will be performed ***"
 
 # Go to project directory (very important in cron!)
 cd "$PROJECT_DIR" || { echo "ERROR: Cannot cd to $PROJECT_DIR"; exit 1; }
@@ -44,6 +56,12 @@ CHANGES=$(git status --porcelain | grep -c '^' || true)
 
 if [ "$CHANGES" -eq 0 ]; then
     echo "[$(date '+%H:%M:%S')] No changes detected → skipping commit & push"
+elif [ "$DRY_RUN" = "1" ]; then
+    echo "[$(date '+%H:%M:%S')] $CHANGES change(s) found → DRY RUN, would commit & push:"
+    /usr/bin/git --no-pager diff --stat
+    echo "  would run: git add ."
+    echo "  would run: git commit --no-gpg-sign -m \"$GIT_COMMIT_MSG\""
+    echo "  would run: git push origin $GIT_BRANCH"
 else
     echo "[$(date '+%H:%M:%S')] $CHANGES change(s) found → committing & pushing"
 
