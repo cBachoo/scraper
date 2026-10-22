@@ -42,15 +42,13 @@ The scraper will:
 
 For local development without Docker:
 ```bash
-pip install -r requirements.txt
-python scraper.py
+uv sync
+uv run scraper.py
 ```
 
 ## Dependencies
 
-- beautifulsoup4==4.14.3
-- selenium==4.39.0
-- webdriver_manager==4.0.2
+Managed with [uv](https://docs.astral.sh/uv/). See `pyproject.toml` (pinned versions in `uv.lock`).
 
 ## Output
 

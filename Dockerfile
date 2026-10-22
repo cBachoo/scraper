@@ -32,12 +32,15 @@ RUN set -eux; \
 # Set working directory
 WORKDIR /app
 
-# Copy requirements and install Python dependencies
-COPY requirements.txt requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+# Install uv and the locked Python dependencies (cached unless the lockfile changes)
+COPY --from=ghcr.io/astral-sh/uv:0.13.5 /uv /usr/local/bin/uv
+ENV UV_COMPILE_BYTECODE=1 UV_LINK_MODE=copy UV_PYTHON_DOWNLOADS=never
+COPY pyproject.toml uv.lock .python-version ./
+RUN uv sync --locked --no-dev --no-cache
 
 # Copy the environment
 COPY . .
 
-# Run the scraper
+# Run the scraper with the project venv
+ENV PATH="/app/.venv/bin:$PATH"
 CMD ["python", "scraper.py"]
