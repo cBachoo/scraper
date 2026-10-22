@@ -2,25 +2,49 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
-            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Oct 7, 2026 (UTC)",
-            "date": "10:00 p.m., Oct 7–9:59 p.m., Oct 15, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3134_L1791410400.png?c=20260904083346&version=1791925419900",
+            "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Oct 20, 2026 (UTC)",
+            "date": "10:00 p.m., Oct 20–9:59 p.m., Nov 1, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3138_L1792533600.png?c=20260907044149&version=1792555203927",
             "featured_uma": [
-                "[Heroic Author] Zenno Rob Roy"
+                "[Crane's Ambition] Kitasan Black",
+                "[Jade's Prosperity] Satono Diamond"
+            ],
+            "featured_supports": [
+                {
+                    "rarity": "SSR",
+                    "name": "[Outrunning Misfortune] Special Week"
+                },
+                {
+                    "rarity": "SSR",
+                    "name": "[Capricious Excellence] Sweep Tosho"
+                }
             ]
+        },
+        {
+            "title": "3★/SSR Guaranteed Release Bracket Scouts now available!\n10:00 p.m., Oct 20, 2026 (UTC)",
+            "date": "10:00 p.m., Oct 20–9:59 p.m., Dec 17, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_5011_L1792533600.png?c=20261009062225&version=1792555203927"
         }
     ],
     "events": [
         {
-            "title": "The story event Illuminate the Heart has ended!\n10:00 p.m., Oct 12, 2026 (UTC)",
-            "date": "10:00 p.m., Oct 12, 2026 (UTC)",
-            "image": ""
+            "title": "The story event Happy New Future! A Sentimental Sunrise is here!\n10:00 p.m., Oct 20, 2026 (UTC)",
+            "date": "10:00 p.m., Oct 20–9:59 p.m., Nov 1, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100040_L1792533600.png?c=20260907070352&version=1792555203927"
         },
         {
-            "title": "The race event Champions Meeting: Sagittarius Cup is here!\n10:00 p.m., Oct 10, 2026 (UTC)",
-            "date": "10:00 p.m., Oct 10–9:59 p.m., Oct 16, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30311202_L1791669600.png?c=20260909085908&version=1791925419900"
+            "title": "A Legend Race is here!\n10:00 p.m., Oct 19, 2026 (UTC)",
+            "legend": [
+                {
+                    "date": "10:00 p.m., Oct 19–2:59 p.m., Oct 22, 2026 (UTC)",
+                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200151_L1792447200.png?c=20260814012444"
+                },
+                {
+                    "date": "3:00 p.m., Oct 22–2:59 p.m., Oct 25, 2026 (UTC)",
+                    "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30200152_L1792447200.png?c=20260814012444"
+                }
+            ]
         }
     ],
-    "timestamp": "2026-10-13 21:04:31"
+    "timestamp": "2026-10-21 04:00:55"
 }
