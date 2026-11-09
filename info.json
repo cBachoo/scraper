@@ -2,14 +2,33 @@
     "url": "https://webview.games.umamusume.com/umamusume/contents/v/index.html#/info?p=1&c=0",
     "scouts": [
         {
+            "title": "New Spotlight Pretty Derby and Spotlight Support Card Scouts coming soon!\n10:00 p.m., Nov 8, 2026 (UTC)",
+            "date": "10:00 p.m., Nov 9–9:59 p.m., Nov 23, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3146_L1794175200.png?c=20260925030253&version=1794200405792",
+            "featured_uma": [
+                "[Melt Your Heart] Ines Fujin",
+                "[Marguerite Latte] Mejiro Ryan"
+            ],
+            "featured_supports": [
+                {
+                    "rarity": "SSR",
+                    "name": "[Marvelous☆Chocolate Show] Marvelous Sunday"
+                },
+                {
+                    "rarity": "SSR",
+                    "name": "[Transform! Garçon Form!] Biko Pegasus"
+                }
+            ]
+        },
+        {
             "title": "Unity Cup Pretty Derby and Support Card Scouts out now!\n10:00 p.m., Nov 5, 2026 (UTC)",
             "date": "10:00 p.m., Nov 5–9:59 p.m., Nov 15, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3144_L1793916000.png?c=20260925035632&version=1794027661314"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3144_L1793916000.png?c=20260925035632&version=1794200405792"
         },
         {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Nov 5, 2026 (UTC)",
             "date": "10:00 p.m., Nov 5–9:59 p.m., Nov 15, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3142_L1793916000.png?c=20260925035332&version=1794027661314",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3142_L1793916000.png?c=20260925035332&version=1794200405792",
             "featured_uma": [
                 "[Fun☆Fun☆Party Night] Daitaku Helios"
             ],
@@ -31,6 +50,11 @@
     ],
     "events": [
         {
+            "title": "The race event Champions Meeting: Aquarius Cup is coming in late November!\n10:00 p.m., Nov 7, 2026 (UTC)",
+            "date": "10:00 p.m., Nov 7, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30320202_L1794088800.png?c=20260925035415&version=1794200405792"
+        },
+        {
             "title": "Unity Cup: Shine On, Team Spirit! events are here!\n10:00 p.m., Nov 5, 2026 (UTC)",
             "date": "10:00 p.m., Nov 5–9:59 p.m., Nov 15, 2026 (UTC)",
             "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/header_27000001_L1793916000.png?c=20261019054325"
@@ -38,8 +62,8 @@
         {
             "title": "A Racing Carnival event is here!\n10:00 p.m., Nov 5, 2026 (UTC)",
             "date": "10:00 p.m., Nov 5–9:59 p.m., Nov 12, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30700006_L1793916000.png?c=20261022072657&version=1794027661314"
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30700006_L1793916000.png?c=20261022072657&version=1794200405792"
         }
     ],
-    "timestamp": "2026-11-07 05:01:53"
+    "timestamp": "2026-11-09 05:01:08"
 }
