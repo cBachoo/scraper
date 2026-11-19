@@ -4,7 +4,7 @@
         {
             "title": "Spotlight Pretty Derby and Spotlight Support Card Scouts out now!\n10:00 p.m., Nov 9, 2026 (UTC)",
             "date": "10:00 p.m., Nov 9–9:59 p.m., Nov 23, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3146_L1794261600.png?c=20261028021543&version=1794891604807",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/announce_banner_3146_L1794261600.png?c=20261028021543&version=1795064417437",
             "featured_uma": [
                 "[Melt Your Heart] Ines Fujin",
                 "[Marguerite Latte] Mejiro Ryan"
@@ -23,15 +23,15 @@
     ],
     "events": [
         {
+            "title": "The league selection period for the Champions Meeting: Aquarius Cup has begun!\n10:00 p.m., Nov 17, 2026 (UTC)",
+            "date": "10:00 p.m., Nov 21–9:59 p.m., Nov 27, 2026 (UTC)",
+            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30300202_L1794952800.png?c=20261008081608&version=1795064417437"
+        },
+        {
             "title": "The Racing Carnival event has ended!\n10:00 p.m., Nov 12, 2026 (UTC)",
             "date": "10:00 p.m., Nov 12, 2026 (UTC)",
             "image": ""
-        },
-        {
-            "title": "The story event Sweet Memories Teatime is here!\n10:00 p.m., Nov 9, 2026 (UTC)",
-            "date": "10:00 p.m., Nov 9–9:59 p.m., Nov 23, 2026 (UTC)",
-            "image": "https://assets-webview-umamusume-en.akamaized.net/contents/assets/images/uploads/Header/banner_30100042_L1794261600.png?c=20260925060024&version=1794891604807"
         }
     ],
-    "timestamp": "2026-11-17 05:00:49"
+    "timestamp": "2026-11-19 05:00:54"
 }
